@@ -1,0 +1,73 @@
+[2024-05-21T22:15:13.153+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-21T22:15:13.161+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: video_processing_DAG.split_video_task manual__2024-05-21T22:09:55.352111+00:00 [queued]>
+[2024-05-21T22:15:13.163+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: video_processing_DAG.split_video_task manual__2024-05-21T22:09:55.352111+00:00 [queued]>
+[2024-05-21T22:15:13.163+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-05-21T22:15:13.167+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): split_video_task> on 2024-05-21 22:09:55.352111+00:00
+[2024-05-21T22:15:13.170+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=330) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-21T22:15:13.171+0000] {standard_task_runner.py:63} INFO - Started process 334 to run task
+[2024-05-21T22:15:13.171+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'video_processing_DAG', 'split_video_task', 'manual__2024-05-21T22:09:55.352111+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/video_processing_dag.py', '--cfg-path', '/tmp/tmpdmchj627']
+[2024-05-21T22:15:13.172+0000] {standard_task_runner.py:91} INFO - Job 89: Subtask split_video_task
+[2024-05-21T22:15:13.187+0000] {task_command.py:426} INFO - Running <TaskInstance: video_processing_DAG.split_video_task manual__2024-05-21T22:09:55.352111+00:00 [running]> on host 5d37147f490e
+[2024-05-21T22:15:13.212+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='code2stories@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='video_processing_DAG' AIRFLOW_CTX_TASK_ID='split_video_task' AIRFLOW_CTX_EXECUTION_DATE='2024-05-21T22:09:55.352111+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-21T22:09:55.352111+00:00'
+[2024-05-21T22:15:13.213+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-21T22:15:13.213+0000] {video_processing_dag.py:66} INFO - Triggering Celery task to split video
+[2024-05-21T22:15:13.215+0000] {logging_mixin.py:188} INFO - 2024-03-26_11_20.mp4
+[2024-05-21T22:15:13.215+0000] {logging_mixin.py:188} INFO - Starting to split video: 2024-03-26_11_20.mp4
+[2024-05-21T22:15:13.216+0000] {logging_mixin.py:188} INFO - Calculating chunk times...
+[2024-05-21T22:15:13.246+0000] {logging_mixin.py:188} INFO - Chunk times calculated: [(0, 132.13)]
+[2024-05-21T22:15:13.265+0000] {logging_mixin.py:188} INFO - Waiting for all tasks to complete...
+[2024-05-21T22:15:13.265+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-21T22:15:13.265+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/video_processing_dag.py", line 69, in split_video_task
+    result = split_video_into_chunks(filePath)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/local.py", line 182, in __call__
+    return self._get_current_object()(*a, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/app/trace.py", line 737, in __protected_call__
+    return orig(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/app/task.py", line 411, in __call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/video_audio_spliting.py", line 71, in split_video_into_chunks
+    result.join()  # Wait for all tasks to finish
+    ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/result.py", line 760, in join
+    assert_will_not_block()
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/result.py", line 38, in assert_will_not_block
+    raise RuntimeError(E_WOULDBLOCK)
+RuntimeError: Never call result.get() within a task!
+See https://docs.celeryq.dev/en/latest/userguide/tasks.html#avoid-launching-synchronous-subtasks
+
+[2024-05-21T22:15:13.269+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=video_processing_DAG, task_id=split_video_task, run_id=manual__2024-05-21T22:09:55.352111+00:00, execution_date=20240521T220955, start_date=20240521T221513, end_date=20240521T221513
+[2024-05-21T22:15:13.274+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 89 for task split_video_task (Never call result.get() within a task!
+See https://docs.celeryq.dev/en/latest/userguide/tasks.html#avoid-launching-synchronous-subtasks
+; 334)
+[2024-05-21T22:15:13.314+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-21T22:15:13.320+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-21T22:15:13.321+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

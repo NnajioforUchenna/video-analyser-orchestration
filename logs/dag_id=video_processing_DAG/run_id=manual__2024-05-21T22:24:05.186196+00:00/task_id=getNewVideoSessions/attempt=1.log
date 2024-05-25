@@ -1,0 +1,362 @@
+[2024-05-21T22:24:06.771+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-21T22:24:06.782+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: video_processing_DAG.getNewVideoSessions manual__2024-05-21T22:24:05.186196+00:00 [queued]>
+[2024-05-21T22:24:06.784+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: video_processing_DAG.getNewVideoSessions manual__2024-05-21T22:24:05.186196+00:00 [queued]>
+[2024-05-21T22:24:06.785+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-21T22:24:06.789+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): getNewVideoSessions> on 2024-05-21 22:24:05.186196+00:00
+[2024-05-21T22:24:06.791+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=70) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-21T22:24:06.792+0000] {standard_task_runner.py:63} INFO - Started process 74 to run task
+[2024-05-21T22:24:06.792+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'video_processing_DAG', 'getNewVideoSessions', 'manual__2024-05-21T22:24:05.186196+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/video_processing_dag.py', '--cfg-path', '/tmp/tmp64kmfkrb']
+[2024-05-21T22:24:06.793+0000] {standard_task_runner.py:91} INFO - Job 92: Subtask getNewVideoSessions
+[2024-05-21T22:24:06.810+0000] {task_command.py:426} INFO - Running <TaskInstance: video_processing_DAG.getNewVideoSessions manual__2024-05-21T22:24:05.186196+00:00 [running]> on host 824044369e6b
+[2024-05-21T22:24:06.836+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='code2stories@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='video_processing_DAG' AIRFLOW_CTX_TASK_ID='getNewVideoSessions' AIRFLOW_CTX_EXECUTION_DATE='2024-05-21T22:24:05.186196+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-21T22:24:05.186196+00:00'
+[2024-05-21T22:24:06.836+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-21T22:24:06.837+0000] {video_processing_dag.py:35} INFO - Getting New Sessions I was called to run
+[2024-05-21T22:24:06.837+0000] {logging_mixin.py:188} INFO - I got the files
+[2024-05-21T22:24:06.838+0000] {__init__.py:49} INFO - file_cache is only supported with oauth2client<4.0.0
+[2024-05-21T22:24:09.721+0000] {logging_mixin.py:188} INFO - tgw-qmre-gqs (2024-05-21 13:24 GMT+1) (1ywZaPwpaVH3_-LjgTQuKM0b2N-XPFU-e) - text/plain
+[2024-05-21T22:24:09.724+0000] {logging_mixin.py:188} INFO - tgw-qmre-gqs (2024-05-21 13:24 GMT+1) (10vw5JvMXcZK3emeJeCIzRxXW446lwkcs) - video/mp4
+[2024-05-21T22:24:09.725+0000] {logging_mixin.py:188} INFO - tgw-qmre-gqs (2024-05-21 13:24 GMT+1) - Transcript (14S1u0p6FzrE03srLjJG74tiC7R9rpZyWa8sEC4MZfBI) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.726+0000] {logging_mixin.py:188} INFO - Issues in Blukers WebApp (1nHWFbcRWz9pu62QKGXYS_ZgCxcgN4dOBlZ7Tmr042dM) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.728+0000] {logging_mixin.py:188} INFO - Workflow (1KQ1sQDhKEXQQ0sEItWc8Hod90uzcoVYFrMAsCO4l6MY) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.729+0000] {logging_mixin.py:188} INFO - Conversation on best way to deploy my workflow: (1thXvsR4EDUUWZeo-WeQK-pMeWMfZJKviy3xcYQkDbbY) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.730+0000] {logging_mixin.py:188} INFO - Untitled document (1JAARYLQ_aEZIiBfNSFbxBtrzWB4PMvCnh19aldilcKw) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.731+0000] {logging_mixin.py:188} INFO - tvk-sxuk-ttb (2024-05-16 11:45 GMT+1) (1LMAOh1ngIYv7__EWl2M4AVMXRAgiSqTk) - video/mp4
+[2024-05-21T22:24:09.732+0000] {logging_mixin.py:188} INFO - tvk-sxuk-ttb (2024-05-16 11:45 GMT+1) - Transcript (1yA3ZZvLWYFMn9kLxCIf_qGvvPTuxmKsyC_kOiup95qA) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.733+0000] {logging_mixin.py:188} INFO - nkn-njnp-eur (2024-05-14 11:17 GMT+1) (1GCopn1n3zH8UJY-noft8Rn4UjZyS6p4I) - text/plain
+[2024-05-21T22:24:09.734+0000] {logging_mixin.py:188} INFO - nkn-njnp-eur (2024-05-14 11:17 GMT+1) (1v3xdQfnD62eFFzRY71dIbVzMeKUzOVOM) - video/mp4
+[2024-05-21T22:24:09.735+0000] {logging_mixin.py:188} INFO - nkn-njnp-eur (2024-05-14 11:17 GMT+1) - Transcript (1iPRWbDtVr0E7kboCWh87GgFxtkqfRMEVWVyA6TpJQBk) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.736+0000] {logging_mixin.py:188} INFO - Untitled document (1kPqmrhVUySODR-ihR5QZ4MZihr7jmtFZejm7-hvdTAE) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.737+0000] {logging_mixin.py:188} INFO - yvt-jajy-xcv (2024-02-07 19:54 GMT) (19Uw-na4K1zsel6hHYru9aybd-AFNIXm8) - video/mp4
+[2024-05-21T22:24:09.738+0000] {logging_mixin.py:188} INFO - Build Video Analysis Application (1QN13R_F6jgGPdJGcL66BOOQiogazDjL1VAEPO3Snvjw) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.738+0000] {logging_mixin.py:188} INFO - dak-gvwv-zux (2024-05-13 11:31 GMT+1) (1kzF5WzkOlxgCbcDh9VxzZrQJXH4y91z3) - text/plain
+[2024-05-21T22:24:09.739+0000] {logging_mixin.py:188} INFO - dak-gvwv-zux (2024-05-13 11:31 GMT+1) (1dmvK1aTkWl6XqK4CbIai4sT56EXT5pv_) - video/mp4
+[2024-05-21T22:24:09.740+0000] {logging_mixin.py:188} INFO - dbi-fhnp-res (2024-05-13 23:09 GMT+1) - Transcript (1TP_niHf-cJvHxBgzp0kD1_0wOWu5FFliCDD8kfk0W3o) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.741+0000] {logging_mixin.py:188} INFO - yom-dxdk-jzf (2024-04-05 10:36 GMT) (1AN9a4JBwv5YsswqbkRKb1MvA1tgHv83a) - video/mp4
+[2024-05-21T22:24:09.742+0000] {logging_mixin.py:188} INFO - Retrospective 13052024 (16-nxfM_01zJMQPh21Gy2fP1R2qt_AhTnepLXRPk7cxY) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.742+0000] {logging_mixin.py:188} INFO - vjs-yfax-cym (2024-05-10 12:07 GMT+1) (14NdsBN7lI3Ib9RMKDOsQxS51-0n36v3o) - video/mp4
+[2024-05-21T22:24:09.743+0000] {logging_mixin.py:188} INFO - Tasks to Complete Blukers CRM (07-05-2024) (1q2JRXHLHL1YYCMH2t9wazVeTalXXNl6jdiWjbeAG6jw) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.744+0000] {logging_mixin.py:188} INFO - Issues on Blukers CRM (1EWWSceoWi0Lmn3DCXKl96BWs9v2ehlACw41caF8pRSw) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.745+0000] {logging_mixin.py:188} INFO - kot-nyft-feo (2024-05-09 12:22 GMT+1) (1O7APoPIDFJFhs6RnJK_HdopAzXnV3X2-) - text/plain
+[2024-05-21T22:24:09.746+0000] {logging_mixin.py:188} INFO - kot-nyft-feo (2024-05-09 12:22 GMT+1) (1BKkJUHc7ttdaEg0zD3R0Se0s-XfMoO_8) - video/mp4
+[2024-05-21T22:24:09.746+0000] {logging_mixin.py:188} INFO - Untitled document (1YZJTqQGNsM1s6w7N9fnBiRu-R53zOh6bhkDdSQrYikc) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.747+0000] {logging_mixin.py:188} INFO - tjn-qymu-uzf (2024-05-08 11:30 GMT+1) (1JpoIj05pN4lXmzAL0O889J2qkhvT8Rsk) - text/plain
+[2024-05-21T22:24:09.748+0000] {logging_mixin.py:188} INFO - tjn-qymu-uzf (2024-05-08 11:30 GMT+1) (1mnytj_kppV8WENcxWEQchAgoVDkoUIAI) - video/mp4
+[2024-05-21T22:24:09.748+0000] {logging_mixin.py:188} INFO - vtz-wwwk-kzv (2024-05-07 11:13 GMT+1) (1Og26URrAuF1b9KNLSB3JrMRSx6yIRTFt) - text/plain
+[2024-05-21T22:24:09.749+0000] {logging_mixin.py:188} INFO - vtz-wwwk-kzv (2024-05-07 11:13 GMT+1) (1FcAReCkja3BpFCGqKzCw5fPAgUYi76hT) - video/mp4
+[2024-05-21T22:24:09.750+0000] {logging_mixin.py:188} INFO - Problem: Working Together (1Xhx2-qJ-WYy_EbjIt7CkycyDNKaMV3wvs-7U7nkqwSA) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.750+0000] {logging_mixin.py:188} INFO - Untitled document (18j5oKTEfACwpPF1-YODQjcobD-9kCbwAvGWhV9_uwhU) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.751+0000] {logging_mixin.py:188} INFO - Collaboration (1NH3fem0wpCaty39niCgLLrV-V9mSJtZj) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.751+0000] {logging_mixin.py:188} INFO - Technology Stack (1miV8LPWaxEwGYLtdehkvpLAf1ZFsliwiWbvEycefJ2Q) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.752+0000] {logging_mixin.py:188} INFO - hsm-sdwj-vqu (2024-05-06 11:25 GMT+1) (1i5paWwS0x8xboMh2TT8o1Fmysehcgmxr) - text/plain
+[2024-05-21T22:24:09.753+0000] {logging_mixin.py:188} INFO - hsm-sdwj-vqu (2024-05-06 11:25 GMT+1) (10hCDX9d99P-X4CSLP8qslTpxe4o50Na3) - video/mp4
+[2024-05-21T22:24:09.753+0000] {logging_mixin.py:188} INFO - hsm-sdwj-vqu - May 6, 2024 (1fvC9ALdHwuqGjgN9T_aWMogV8VbH-N5GfJ1wChsI29Y) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.754+0000] {logging_mixin.py:188} INFO - cid-chva-ion (2024-05-04 11:37 GMT+1) (13v_xEqIfhwizPDoPuKzibuVHjGnPuzuL) - text/plain
+[2024-05-21T22:24:09.754+0000] {logging_mixin.py:188} INFO - cid-chva-ion (2024-05-04 11:37 GMT+1) (1OL_oaQfTbmz7-LYC-1BdXnzjH-uDyR79) - video/mp4
+[2024-05-21T22:24:09.754+0000] {logging_mixin.py:188} INFO - Remaining Tasks to Complete Blukers Project:   22/04/24 (1YeR1jWCativFRHG_8AHfxqhQmtfSHZbjsehvO-HFm1I) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.754+0000] {logging_mixin.py:188} INFO - UserJourney (1anCBeZSISNndq8NgX64zEjkaim3IoT_FT7tTOBBWEjw) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.755+0000] {logging_mixin.py:188} INFO - vzz-uacc-hjz (2024-04-18 16:40 GMT+1) (1NyUFOxDozQfGlouu-XY7mKKakMg7O5u2) - video/mp4
+[2024-05-21T22:24:09.755+0000] {logging_mixin.py:188} INFO - Creating a Flutter project (11_ye98DDqR1zi0WDDPkx3YzKRoNGcGA7hZi2qWH16Hc) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.755+0000] {logging_mixin.py:188} INFO - Develop a Comprehensive Training Curriculum (1ovE3ithd4A7BHt4WMClBW359mbI_wbrJ7qoRuaBBAts) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.755+0000] {logging_mixin.py:188} INFO - Referal Calculations (1r6I9eN3FV28kTufA-yFbkwNtoub4sETCplslGc-DMj8) - application/vnd.google-apps.spreadsheet
+[2024-05-21T22:24:09.756+0000] {logging_mixin.py:188} INFO - checklist for the Remote Sales Rep Project (1EV9zzQ7lp14SSOvsP4rLAv8Ii6i-3B8R7S2Ahhjrth0) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.756+0000] {logging_mixin.py:188} INFO - Remote Sales Rep Project (1K_S4n6VIMpI6iCvQOs-G4rNYzNm-hBNWPgsUGI_iL8I) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.756+0000] {logging_mixin.py:188} INFO - Problem Definition (1Cva2eoOsEgbFuMdFtSrMYTQ37U-iddE1oASCZ86bJwI) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.757+0000] {logging_mixin.py:188} INFO - Remote Sales Rep Project (1jCpat_in3jC4RGHLdqrn5Rb2JIRDhXLz) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.757+0000] {logging_mixin.py:188} INFO - Realtime Sales Training Timeline (10m3r75vLMMZo7AMwX-KZVvC5tij_Ua_VMNiJ-AA05BE) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.757+0000] {logging_mixin.py:188} INFO - yom-dxdk-jzf - Apr 5, 2024 (1-gj0QCT63BxIhOSQeVvLGx3mIVoVTD3zq4FUBTJZzB8) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.757+0000] {logging_mixin.py:188} INFO - Chris and Emma: Guide (1Wm2uovuKY3zPFxuYL4Sa-NZ8Z3h3IK_HI0dEovfaNwA) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.758+0000] {logging_mixin.py:188} INFO - kcn-gmwr-jnq (2024-04-15 13:37 GMT+1) (1k0cXjpyDIxveSvn8Ved1Ha9jYu5ijch8) - video/mp4
+[2024-05-21T22:24:09.758+0000] {logging_mixin.py:188} INFO - Ekene-Guide (1EgmNBANBxW2SHEe1MzmxhhkZsHx7vFgZmiCwwAjhc5E) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.758+0000] {logging_mixin.py:188} INFO - Documentation on Setting WordPress Site <Landing Page> (1w4skOOjOQdILkBjTMMMhNTdBscw5b8wT0APZaPP1QI8) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.758+0000] {logging_mixin.py:188} INFO - Untitled document (1Q0xKu5dhyht1VR93CTNNUSX0E1Llij7kKM7PK5TKd-U) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.759+0000] {logging_mixin.py:188} INFO - yfk-yhyz-wha (2024-04-08 14:19 GMT) (1DN55z3Dgzw-EvTCSl-qyE4RGAUfsV4K2) - video/mp4
+[2024-05-21T22:24:09.759+0000] {logging_mixin.py:188} INFO - Problem Solving Model (18nBxJ0HonxPiEGptTU0yp6WDLPM5wvm-jRCh_3dbRng) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.759+0000] {logging_mixin.py:188} INFO - ProblemSolvingModel.pdf (1BTo3fnC-VGIq8vkPw7jBfHkFrLSPGXhu) - application/pdf
+[2024-05-21T22:24:09.759+0000] {logging_mixin.py:188} INFO - Outline Of Problem Solving Model (1hoiDQ6GkAFog0y2nLi6zitXc13tmHvfj17RA1EeBqXI) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.760+0000] {logging_mixin.py:188} INFO - My Solving Problem Method (1qEYQB26eaFjYckPB1ROUpwndqo36hvBgZqe-ya74ESQ) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.760+0000] {logging_mixin.py:188} INFO - yom-dxdk-jzf (2024-04-05 10:36 GMT) (1Kj6lizyiRmLYjP7zOIDGr-lB8lbO_LNz) - text/plain
+[2024-05-21T22:24:09.760+0000] {logging_mixin.py:188} INFO - vvh-nghi-rom (2024-04-01 12:35 GMT) (1UGFeySi7a7bn_BE1lS9jWmSpP_THoOOX) - text/plain
+[2024-05-21T22:24:09.760+0000] {logging_mixin.py:188} INFO - vvh-nghi-rom (2024-04-01 12:35 GMT) (1Vgf3g9qj_Kat2Ie98P6S99nfvJDWeicV) - video/mp4
+[2024-05-21T22:24:09.761+0000] {logging_mixin.py:188} INFO - vvh-nghi-rom - Apr 1, 2024 (1KqAYWPD92UoKsDur1CAKl2OnpwJAdmeZTsZB777R-78) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.761+0000] {logging_mixin.py:188} INFO - vvh-nghi-rom (2024-04-01 11:22 GMT) (1kMWmEFe3seQGrGfku0BbXhZNnYuMiA7Z) - video/mp4
+[2024-05-21T22:24:09.761+0000] {logging_mixin.py:188} INFO - ioe-wkky-qwx (2024-03-26 11:24 GMT) (1HJuTQHX3L_hfG77z2qeM4LjGOGiJBrhD) - video/mp4
+[2024-05-21T22:24:09.762+0000] {logging_mixin.py:188} INFO - ioe-wkky-qwx (2024-03-26 11:20 GMT) (10KbpFBZYA9BOtx4YozUgDmkm4qZdRtgE) - video/mp4
+[2024-05-21T22:24:09.762+0000] {logging_mixin.py:188} INFO - Timeline: (Project) (15wmmiZz96e1f-6H187xWetQ8vfn5soDoaUhmfaER9_A) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.762+0000] {logging_mixin.py:188} INFO - ioe-wkky-qwx - Mar 26, 2024 (1FwsxGpbCJa1XGNwDsxkD0hofnxIW4eePO89IqyzaIsA) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.762+0000] {logging_mixin.py:188} INFO - eaq-yxpn-ydf (2024-03-22 14:03 GMT) (1LENVUfOSEOzL2tghRyoZ7w64wE9Yw8LG) - video/mp4
+[2024-05-21T22:24:09.763+0000] {logging_mixin.py:188} INFO - ges-qyco-iok (2024-03-21 12:53 GMT) (1-LVeZlW5WbZ_xalSPc6eEhizn2vla4bV) - text/plain
+[2024-05-21T22:24:09.763+0000] {logging_mixin.py:188} INFO - ges-qyco-iok (2024-03-21 12:53 GMT) (1EU273OgZHyVWNoVzDWXdBoV5Ash_0XwH) - video/mp4
+[2024-05-21T22:24:09.763+0000] {logging_mixin.py:188} INFO - ges-qyco-iok - Mar 21, 2024 (1MW0gkOe0QE85SvwJ-hzGAyDUaG6aJOiq5uQCWW4Je6Y) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.764+0000] {logging_mixin.py:188} INFO - ges-qyco-iok - Mar 21, 2024 (1wCpVtf4pBsq9JSbPr7SLsPIfM7Se_dRqJ-zmvy3KHlI) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.764+0000] {logging_mixin.py:188} INFO - Work Guidelines (1hC3fJgC2KdsXCmaQZvrEArK0HXTeCL4Ytfc1Cg0SxTQ) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.764+0000] {logging_mixin.py:188} INFO - eaq-iynm-jpd (2024-03-19 11:22 GMT) (1_4Nm6gI6S4ZMjXLaHp72SzdqVJvEQtik) - text/plain
+[2024-05-21T22:24:09.764+0000] {logging_mixin.py:188} INFO - eaq-iynm-jpd (2024-03-19 11:22 GMT) (1EcpbHWsks_xRX7JpZCCY4amKmYSKbjUT) - video/mp4
+[2024-05-21T22:24:09.765+0000] {logging_mixin.py:188} INFO - eaq-iynm-jpd - Mar 19, 2024 (1nWvcIU5i3c2BLu6g_czbiT7zONsgA3C5SpJoCp2C9tU) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.765+0000] {logging_mixin.py:188} INFO - enm-eiin-tva (2024-03-18 12:15 GMT) (1W1f0EAGHei0GDNClxTkAYPHeSU7hjZLi) - text/plain
+[2024-05-21T22:24:09.765+0000] {logging_mixin.py:188} INFO - enm-eiin-tva (2024-03-18 12:15 GMT) (1cawbpL28sg5vZJNu5EtPk_oIngyzSkoI) - video/mp4
+[2024-05-21T22:24:09.765+0000] {logging_mixin.py:188} INFO - enm-eiin-tva - Mar 18, 2024 (10whQap9INlYyp38BWTB51k_-vGkkcCa_XdgxmHZzuTY) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.766+0000] {logging_mixin.py:188} INFO - enm-eiin-tva - Mar 18, 2024 (1Al6537doKsV16GMh56KGZiN3s2cGJLSrRRcc5Rmbyhs) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.766+0000] {logging_mixin.py:188} INFO - gnj-gwgq-sph (2024-03-18 10:13 GMT) (1qT8xFrbm2Ev3BdMjov_WVR_ePnPv6wmF) - text/plain
+[2024-05-21T22:24:09.766+0000] {logging_mixin.py:188} INFO - gnj-gwgq-sph (2024-03-18 10:13 GMT) (1E9MwPe57UMci06f2mIL6Y8fqmYUPiDTy) - video/mp4
+[2024-05-21T22:24:09.766+0000] {logging_mixin.py:188} INFO - gnj-gwgq-sph - Mar 18, 2024 (1IAhBO3xJ5O3SbxsMngOHzpOK8awHnlVpWgq-ShwBzZA) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.766+0000] {logging_mixin.py:188} INFO - wfx-kbtq-yxn (2024-03-14 10:43 GMT) (1s4hlpdQVo6cE2-CM5fMxmhzrt5WO4EH1) - text/plain
+[2024-05-21T22:24:09.767+0000] {logging_mixin.py:188} INFO - wfx-kbtq-yxn (2024-03-14 10:43 GMT) (1xvmlDNe06lqLFZyRWMWHLRdGl7b96tsr) - video/mp4
+[2024-05-21T22:24:09.767+0000] {logging_mixin.py:188} INFO - wfx-kbtq-yxn - Mar 14, 2024 (1w-TtPGn4E7xC5hVhU5JIpE59Zb-hjEydeF7FMWyxc_s) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.767+0000] {logging_mixin.py:188} INFO - wfx-kbtq-yxn - Mar 14, 2024 (1uYJEAw0EK7vLaWM_b22poJw1Ztk-_2cfvzuSvO52WQs) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.767+0000] {logging_mixin.py:188} INFO - wfx-kbtq-yxn - Mar 14, 2024 (1hQ56uj4VJM3wH8k--mMIYWzogoSgW37-33UELSW7G2I) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.768+0000] {logging_mixin.py:188} INFO - ahw-sxia-enf (2024-03-12 11:47 GMT) (1ngx6CQDhxRLdLqNKCVJLASnVYeCNJmFQ) - text/plain
+[2024-05-21T22:24:09.768+0000] {logging_mixin.py:188} INFO - ahw-sxia-enf (2024-03-12 11:47 GMT) (1hp7SoJyQTTV0qN2U8WPM4tZPDmx7DJVI) - video/mp4
+[2024-05-21T22:24:09.768+0000] {logging_mixin.py:188} INFO - ahw-sxia-enf - Mar 12, 2024 (1EnWn9Bj23c2MlxJasyEZL7YyaJBF_X2aks9JCoI8_-I) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.768+0000] {logging_mixin.py:188} INFO - Untitled document (1Bp_Cv3wz1m0T8JVBr1er8m1LfHm3YSva0v9lDVcLruE) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.769+0000] {logging_mixin.py:188} INFO - mtw-khih-bzu (2024-03-07 12:52 GMT) (1wcnWHRBsLlqduIQr2vFKRW02wD-HqmuT) - video/mp4
+[2024-05-21T22:24:09.769+0000] {logging_mixin.py:188} INFO - Implementing Subscription: (1xy8lyxvFoncBDK1itLm07Owh899iLgqet9xaxzd1ynw) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.769+0000] {logging_mixin.py:188} INFO - Meet Recordings (1cjM7ofi2BdsOjj_52W_773Suo_eU-t4V) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.769+0000] {logging_mixin.py:188} INFO - cqw-yqak-cus (2024-03-06 11:33 GMT) (100HC3Tva7WiXRxB8tf26HEeaAhjczIjZ) - text/plain
+[2024-05-21T22:24:09.769+0000] {logging_mixin.py:188} INFO - cqw-yqak-cus (2024-03-06 11:33 GMT) (1_nZLMQVYzokRyanYapJ3AYapP-nWoeMm) - video/mp4
+[2024-05-21T22:24:09.770+0000] {logging_mixin.py:188} INFO - cqw-yqak-cus - Mar 6, 2024 (1gVYNE3i2kk6zwk1UhLgQbNbGkVGcCTrzwOQUMpb2ifE) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.770+0000] {logging_mixin.py:188} INFO - Untitled drawing (1bdo-kZlyNmbRXRU0mwr87gEp9YBNGxIOTwQAsROh9bI) - application/vnd.google-apps.drawing
+[2024-05-21T22:24:09.770+0000] {logging_mixin.py:188} INFO - ogw-fjsy-ogg (2024-03-05 11:14 GMT) (1dkldMMFCI5HwVmtlvS2bS53T48Yy_EfR) - video/mp4
+[2024-05-21T22:24:09.770+0000] {logging_mixin.py:188} INFO - WidgetCommunications (1z2IRdPQuXVDPfmE3LjgaOXfxviF8T5fzdRbKGSos7zg) - application/vnd.google-apps.drawing
+[2024-05-21T22:24:09.771+0000] {logging_mixin.py:188} INFO - pwa-wvyx-kav (2024-03-04 11:06 GMT) (1HuQ5YJdtYYNYplbfu437LweS8Oqr567y) - text/plain
+[2024-05-21T22:24:09.771+0000] {logging_mixin.py:188} INFO - pwa-wvyx-kav (2024-03-04 11:06 GMT) (1AtBZ759KnKDXGWNCi8DS6vZr7lpv7g04) - video/mp4
+[2024-05-21T22:24:09.771+0000] {logging_mixin.py:188} INFO - Untitled document (14B_p2tG9C_8n1yHDHSe0JxV1trv4455I85Goaci1kdE) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.771+0000] {logging_mixin.py:188} INFO - hji-jvrh-dro (2024-03-01 11:10 GMT) (1L_acXhzjBufVrc9fwNiEDuU0R4iNk-4J) - text/plain
+[2024-05-21T22:24:09.771+0000] {logging_mixin.py:188} INFO - hji-jvrh-dro (2024-03-01 11:10 GMT) (1dlRqNHQOEivdgTTNWiVEpxQ5pq6qxSjC) - video/mp4
+[2024-05-21T22:24:09.772+0000] {logging_mixin.py:188} INFO - hji-jvrh-dro - Mar 1, 2024 (13MFCexG6rlw-O0wciLguRJpBHxy6cx2xDKE0wz71_jY) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.772+0000] {logging_mixin.py:188} INFO - tinyUrl (1mqZCAJysTCGktivWgabsXGmln_sxO6IU) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.772+0000] {logging_mixin.py:188} INFO - ezv-uotz-avr (2024-02-29 11:38 GMT) (1Yr1QC92oZP2-7rd_bYWhjwokwq_IPn0R) - text/plain
+[2024-05-21T22:24:09.772+0000] {logging_mixin.py:188} INFO - ezv-uotz-avr (2024-02-29 11:38 GMT) (1RiH4w42yBbaAyb8d6cTU17vxcc7Z3YWO) - video/mp4
+[2024-05-21T22:24:09.773+0000] {logging_mixin.py:188} INFO - ezv-uotz-avr - Feb 29, 2024 (1nTX14bp-hhcpLxnSJZnOHttjpz3WQCEGi-i06XT6Kxo) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.773+0000] {logging_mixin.py:188} INFO - IMG_6512.HEIC (1iZHPQW9BKhSyTzaqk5n1rDa26VbgTnQz) - image/heif
+[2024-05-21T22:24:09.773+0000] {logging_mixin.py:188} INFO - IMG_6513.HEIC (1Tbxu-t2cGYPwTJhEWeBvQ5St1mE9xAWo) - image/heif
+[2024-05-21T22:24:09.773+0000] {logging_mixin.py:188} INFO - IMG_6516.HEIC (1OCcil48SJEIw0BiJy4H0qkVb5XCMkNYf) - image/heif
+[2024-05-21T22:24:09.774+0000] {logging_mixin.py:188} INFO - IMG_6517.HEIC (1zZ0zJjqWVF80MZXp6mgPIpwPT3TLrarg) - image/heif
+[2024-05-21T22:24:09.774+0000] {logging_mixin.py:188} INFO - IMG_6518.HEIC (1F93CdcFELAj_PTazDBH0qK-jTSNEgeni) - image/heif
+[2024-05-21T22:24:09.774+0000] {logging_mixin.py:188} INFO - Designing a Key Value Store (1dML5awlnoz3Ynk3JC2ZWCyMd1PVDU67z4cLT_OLY2EM) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.774+0000] {logging_mixin.py:188} INFO - IMG_6521.HEIC (1Yc8aTbs1WsZwNZ2kdoOdJ_f5hJgsIR2S) - image/heif
+[2024-05-21T22:24:09.775+0000] {logging_mixin.py:188} INFO - IMG_6523.HEIC (1kuNb4E1LmdkMJBUmsszu7Ao-YoLqDMQZ) - image/heif
+[2024-05-21T22:24:09.775+0000] {logging_mixin.py:188} INFO - IMG_6524.HEIC (1AIe4wb_mtLEhQ2rU96FL-g5gop1T6FnO) - image/heif
+[2024-05-21T22:24:09.775+0000] {logging_mixin.py:188} INFO - IMG_6522.HEIC (1QjWUCml42mtTJJ-yg46XAxFV4EhScEYQ) - image/heif
+[2024-05-21T22:24:09.775+0000] {logging_mixin.py:188} INFO - IMG_6520.HEIC (1DL-Sb7esOkk6uzrR6Uzi5M4s2Z2oGtMH) - image/heif
+[2024-05-21T22:24:09.776+0000] {logging_mixin.py:188} INFO - IMG_6519.HEIC (1EAEc8SsZYFqF_AXSvvy-Q2BW6W3IcUzl) - image/heif
+[2024-05-21T22:24:09.776+0000] {logging_mixin.py:188} INFO - IMG_6515.HEIC (11Oc97n3dbZ6Uws9iIx-HU0AJh6udpi3E) - image/heif
+[2024-05-21T22:24:09.776+0000] {logging_mixin.py:188} INFO - IMG_6514.HEIC (1yLoH0T0QwS70IdOCQDIWxKGb4XXCOh7C) - image/heif
+[2024-05-21T22:24:09.776+0000] {logging_mixin.py:188} INFO - Unique ID Generator (1nsgwpbwSk418wRQlDeeBjWtA0PFCzaxN) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.776+0000] {logging_mixin.py:188} INFO - IMG_6509.HEIC (1XNfsIyT63SLfQ_ZdUKY_IhZpr12HitZa) - image/heif
+[2024-05-21T22:24:09.777+0000] {logging_mixin.py:188} INFO - IMG_6510.HEIC (19bbDdbhoOSUKOJW1k-DMDnk5udRGco0F) - image/heif
+[2024-05-21T22:24:09.777+0000] {logging_mixin.py:188} INFO - IMG_6511.HEIC (1AYnW438fMZvpCpGWX35qzDEwVYM3rHya) - image/heif
+[2024-05-21T22:24:09.777+0000] {logging_mixin.py:188} INFO - IMG_6504.HEIC (1CRrNcC1QxTNYm95qWy20mC5-RUBGZpmd) - image/heif
+[2024-05-21T22:24:09.777+0000] {logging_mixin.py:188} INFO - IMG_6505.HEIC (1u_fzewND78n28ktfScqYjoPe51Vt8JXg) - image/heif
+[2024-05-21T22:24:09.777+0000] {logging_mixin.py:188} INFO - IMG_6506.HEIC (1R4iPzFjQLA_0cKpo4d6AVQIX8PWGINCr) - image/heif
+[2024-05-21T22:24:09.778+0000] {logging_mixin.py:188} INFO - IMG_6507.HEIC (1lh94hbZhbGQ5ioBkgmj0AHmfuyYiFhua) - image/heif
+[2024-05-21T22:24:09.778+0000] {logging_mixin.py:188} INFO - IMG_6508.HEIC (19_skxHnZIbNe6H0LCNMM_URRQOzE8NMt) - image/heif
+[2024-05-21T22:24:09.778+0000] {logging_mixin.py:188} INFO - Design Key Value Store (1W-FpCJSK9PCa8eYUtoyOfWYnzlGwR2kp) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.778+0000] {logging_mixin.py:188} INFO - Untitled drawing (1oJpYoEY3Raybv_q4BHBIoUkMRbsahCgcAzpmyngRkuA) - application/vnd.google-apps.drawing
+[2024-05-21T22:24:09.778+0000] {logging_mixin.py:188} INFO - IMG_6502.HEIC (1Z01QrtA51_NZKuV7RvU90NA8yxEPp_Tz) - image/heif
+[2024-05-21T22:24:09.778+0000] {logging_mixin.py:188} INFO - IMG_6503.HEIC (1owqLWrUqULlukk3k8Dn0Cd_Ev7r-Ei0z) - image/heif
+[2024-05-21T22:24:09.779+0000] {logging_mixin.py:188} INFO - IMG_6500.HEIC (1nWhUuh2nseFp_dwz3XsPz5XyN-9j0awm) - image/heif
+[2024-05-21T22:24:09.779+0000] {logging_mixin.py:188} INFO - IMG_6501.HEIC (1uKE13IgdWUpP8oo_UJMFCbYJ-2fluKeQ) - image/heif
+[2024-05-21T22:24:09.779+0000] {logging_mixin.py:188} INFO - IMG_6498.HEIC (1WkpnZhpfXc8IeBDwtsRBSPTB4INpZwi9) - image/heif
+[2024-05-21T22:24:09.779+0000] {logging_mixin.py:188} INFO - IMG_6499.HEIC (1O-tF15VVgO48PhqAYMVUFocRUXhTSeE4) - image/heif
+[2024-05-21T22:24:09.779+0000] {logging_mixin.py:188} INFO - IMG_6497.HEIC (1B6comgoXlj9LSxnj7kZhyux5YvxCSWwG) - image/heif
+[2024-05-21T22:24:09.780+0000] {logging_mixin.py:188} INFO - IMG_6496.HEIC (12rHZ5pbmK9bN31Mm8M01zwNaI1Cvo4R4) - image/heif
+[2024-05-21T22:24:09.780+0000] {logging_mixin.py:188} INFO - IMG_6492.HEIC (19RikQ30454UozGZLkmMWOCWIBFrCm79_) - image/heif
+[2024-05-21T22:24:09.780+0000] {logging_mixin.py:188} INFO - IMG_6491.HEIC (1rrcg7UN4pW2FdGW4HF9ZAtvxdqlorgqZ) - image/heif
+[2024-05-21T22:24:09.780+0000] {logging_mixin.py:188} INFO - IMG_6493.HEIC (16-AAaRxCMkRwpuzPrhZOH6i69xCVqWoU) - image/heif
+[2024-05-21T22:24:09.780+0000] {logging_mixin.py:188} INFO - IMG_6494.HEIC (17c3tEQXpfz9gEeLw0ojmnXPmRZuswq6C) - image/heif
+[2024-05-21T22:24:09.781+0000] {logging_mixin.py:188} INFO - IMG_6489.HEIC (1bxQpXrniK0xhjufVqxo2fnojldYJwgHo) - image/heif
+[2024-05-21T22:24:09.781+0000] {logging_mixin.py:188} INFO - IMG_6488.HEIC (1Bq8js5CbIbGBYHUWTSRHNkDmJp5qvLP-) - image/heif
+[2024-05-21T22:24:09.781+0000] {logging_mixin.py:188} INFO - IMG_6487.HEIC (1eCj7Bewct_5L-D8pdRc3hscSy_yPYfxj) - image/heif
+[2024-05-21T22:24:09.781+0000] {logging_mixin.py:188} INFO - IMG_6486.HEIC (1iJwMEbR9WEcw21-rWjO6YipdTHag7jxF) - image/heif
+[2024-05-21T22:24:09.781+0000] {logging_mixin.py:188} INFO - IMG_6484.HEIC (15FFmLhUe0PyTBWxxDOqRrd9KZf0OVNVa) - image/heif
+[2024-05-21T22:24:09.782+0000] {logging_mixin.py:188} INFO - IMG_6485.HEIC (1tpNPyqtLyJWK3fCnlCvtURpw_pTtEcMN) - image/heif
+[2024-05-21T22:24:09.782+0000] {logging_mixin.py:188} INFO - IMG_6482.HEIC (1yHjUxJnWAHjjxmQhCWjwMah2RsbWTrPJ) - image/heif
+[2024-05-21T22:24:09.782+0000] {logging_mixin.py:188} INFO - IMG_6483.HEIC (1z57hmRSQ2YagCPFs8F3-GleWwcpkIqUJ) - image/heif
+[2024-05-21T22:24:09.782+0000] {logging_mixin.py:188} INFO - IMG_6478.HEIC (1k3IgkN3YCSnwgQEgapyv_6OSGeRQAJg7) - image/heif
+[2024-05-21T22:24:09.782+0000] {logging_mixin.py:188} INFO - IMG_6479.HEIC (1rbzX1uLmnA8ARWifm-lqrioa354uzoA8) - image/heif
+[2024-05-21T22:24:09.782+0000] {logging_mixin.py:188} INFO - IMG_6476.HEIC (1LoY8WVFyrZiawjMWVPAZq-DWJgTiyzt-) - image/heif
+[2024-05-21T22:24:09.783+0000] {logging_mixin.py:188} INFO - IMG_6477.HEIC (1IMzfDzhhC9nPtqCquP3VYXdxTyjwvtQ9) - image/heif
+[2024-05-21T22:24:09.783+0000] {logging_mixin.py:188} INFO - IMG_6471.HEIC (1JX4Lz8yVvTlOdY4IkZQhAeWgQiwtLvlS) - image/heif
+[2024-05-21T22:24:09.783+0000] {logging_mixin.py:188} INFO - skc-yohn-mad (2024-02-28 13:12 GMT) (1Ilf-jrm-9JJZcZsUHM07G9_nWfPZSspU) - text/plain
+[2024-05-21T22:24:09.783+0000] {logging_mixin.py:188} INFO - skc-yohn-mad (2024-02-28 13:12 GMT) (1bxUEtFpXL-LAAvBhYETi1DkWvRoWFAhj) - video/mp4
+[2024-05-21T22:24:09.783+0000] {logging_mixin.py:188} INFO - skc-yohn-mad - Feb 28, 2024 (1VZGszYoASJs_VMV16ZlbSq0FR4qFvJlLQWnWYPkJq3c) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.783+0000] {logging_mixin.py:188} INFO - nvd-gwci-ebm (2024-02-28 11:06 GMT) (1rtmRoEPGymOfIum9Cyeh0JpPFNDf2Vet) - text/plain
+[2024-05-21T22:24:09.784+0000] {logging_mixin.py:188} INFO - nvd-gwci-ebm (2024-02-28 11:06 GMT) (1IxhCchbLe4nBfjUKweu2k5PFwcISFvRv) - video/mp4
+[2024-05-21T22:24:09.784+0000] {logging_mixin.py:188} INFO - nvd-gwci-ebm - Feb 28, 2024 (12CjfwoW3O2VSqLGSOQB4q5TJtxe5WHnHOCVzr5_9EX4) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.784+0000] {logging_mixin.py:188} INFO - Studying Software Engineering : Curriculum (17NGBdMnWQqOouBmgLOD2FP16UG1B58SnQI6fYCLheqQ) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.784+0000] {logging_mixin.py:188} INFO - iwg-gooq-vjw (2024-02-27 11:10 GMT) (1aVrW-qoW7dPjchb1hj55LmoUlji5Ha7A) - text/plain
+[2024-05-21T22:24:09.784+0000] {logging_mixin.py:188} INFO - iwg-gooq-vjw (2024-02-27 11:10 GMT) (1PXzKDdnvX-XFckNKjOy7iMox-4WM8lGb) - video/mp4
+[2024-05-21T22:24:09.785+0000] {logging_mixin.py:188} INFO - iwg-gooq-vjw - Feb 27, 2024 (1BkBhGDIDe7mqRT5OtDxg6GDISV-hoOztMJPKCVnmOaM) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.785+0000] {logging_mixin.py:188} INFO - dwc-mqqh-vot (2024-02-26 11:24 GMT) (1CDPAR6WZy0vUjhiZ7PhtRd471kJOmN_L) - text/plain
+[2024-05-21T22:24:09.785+0000] {logging_mixin.py:188} INFO - dwc-mqqh-vot (2024-02-26 11:24 GMT) (1a34y1mybCKracVKIDc8fprjNmwGy7pxY) - video/mp4
+[2024-05-21T22:24:09.785+0000] {logging_mixin.py:188} INFO - dwc-mqqh-vot - Feb 26, 2024 (1fbSNolSjPfYCklJHmRepB6BgSznibsplu2brGf3rq_U) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.785+0000] {logging_mixin.py:188} INFO - tasks Blukers CRM (18KC5vd-_uN68gkYIjKXcD--mf5QtMzOFnSKbl67pJnw) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.785+0000] {logging_mixin.py:188} INFO - ock-vudy-ycb (2024-02-23 12:06 GMT) (1gY99qVx0gTUoa5UxY1eOYgR1DL1XkDZN) - text/plain
+[2024-05-21T22:24:09.786+0000] {logging_mixin.py:188} INFO - ock-vudy-ycb (2024-02-23 12:06 GMT) (1XON9YcYYb-VOKq6BoctK6dpTS5PSqwCD) - video/mp4
+[2024-05-21T22:24:09.786+0000] {logging_mixin.py:188} INFO - 06 - Consistency (18uK5cA_eRt97WMQ4hFUh0KyFAqBlZEmG) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.786+0000] {logging_mixin.py:188} INFO - 10 - Summary (1IC7jVBpovuPh8-FeNwhGo_mxNMgtpiKk) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.786+0000] {logging_mixin.py:188} INFO - 07 - Maintainability (1CCRsb5sWha0e9H6TQxEIZqsJkiqMBu9P) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.786+0000] {logging_mixin.py:188} INFO - 02 - Fault Tolerance (1Y5Ft8AA5RRaQUbCe03aw_ZmGjDlCo5ZX) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.787+0000] {logging_mixin.py:188} INFO - 09 - Cost (1buASt7mEdYiU9I7KyqKGT11i4Vbrgfnv) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.787+0000] {logging_mixin.py:188} INFO - 01 - High Availability (1Q-6vegfX0euwhN6uFMuAZZVZxzzn-Fcs) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.787+0000] {logging_mixin.py:188} INFO - 04 - Performance- Time and Rate (1kDpbJb5dj2qvV0Ydd1ayeQAO0lW2O7SW) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.787+0000] {logging_mixin.py:188} INFO - 05 - Durability (167nxxCrUG0UgQYvu_DbFCwmljMnBMNXR) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.787+0000] {logging_mixin.py:188} INFO - 03 - Scalability (1ZKONCXhmrKKKcp2GZ-AqVgUoZEI5pmol) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.787+0000] {logging_mixin.py:188} INFO - 08 - Security (1iBtDn6IFTMyr_dTq_TgPhhAyF6CrphN4) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.788+0000] {logging_mixin.py:188} INFO - System Design (1UIpU1t0WXQJIMfa5Kl8vp-8TuVp8Gfre) - application/vnd.google-apps.folder
+[2024-05-21T22:24:09.788+0000] {logging_mixin.py:188} INFO - ock-vudy-ycb - Feb 23, 2024 (1anm7NYWl_cff4at8piRf3zVgIFEbj7rrjQgaTPqP4sU) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.788+0000] {logging_mixin.py:188} INFO - ock-vudy-ycb - Feb 23, 2024 (1WkhScx5JkxqX8EboPh-wmeaNisoqS9viBet35qWcUg0) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.788+0000] {logging_mixin.py:188} INFO - ock-vudy-ycb - Feb 23, 2024 (1z22S3hSU_Mtbt2DRbKiw0kqUKIZg8MM6xef9EbIGzQM) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.788+0000] {logging_mixin.py:188} INFO - .DS_Store (1f3Y-d307V4spktLxrTAle7Xo2zAXPkDZ) - application/octet-stream
+[2024-05-21T22:24:09.788+0000] {logging_mixin.py:188} INFO - 02 - Summary.png (1d9lGrjfkeLEIPglwAcLQWMEcRgV72aPy) - image/png
+[2024-05-21T22:24:09.789+0000] {logging_mixin.py:188} INFO - 01 - Summary.png (1fCMi-uJoXXD3xiwvxRh6gMTPfzTTg3La) - image/png
+[2024-05-21T22:24:09.789+0000] {logging_mixin.py:188} INFO - 04 -  Cost Breakdown.png (1ip0aidzdg-A0l6jqChaLRVgZkfCHGw3T) - image/png
+[2024-05-21T22:24:09.789+0000] {logging_mixin.py:188} INFO - 03 - Resource Cost 2.png (1WZu1FGze5VwY93mS1YI8bXCx-xCjLgpn) - image/png
+[2024-05-21T22:24:09.789+0000] {logging_mixin.py:188} INFO - 02 - Resource Cost.png (1gMrHP1w2EPpM44EN_pjignh7oJbUU1kC) - image/png
+[2024-05-21T22:24:09.789+0000] {logging_mixin.py:188} INFO - .DS_Store (1-mVh7qtp4wcSQiyYzDrI-qTIqj8bc6bM) - application/octet-stream
+[2024-05-21T22:24:09.789+0000] {logging_mixin.py:188} INFO - 01 - Cost.png (11Qhk39Tzv9kIWH0bOhycruYcOrdFlQUe) - image/png
+[2024-05-21T22:24:09.790+0000] {logging_mixin.py:188} INFO - 02 - Security Problems.png (1JeDoQlkCsp-LaGl-Km_JgdBSb8k3qkkV) - image/png
+[2024-05-21T22:24:09.790+0000] {logging_mixin.py:188} INFO - 01 - Security Triad CIA.png (1xzH-NhSurPQcAi1YXYP-oZWj672myTFw) - image/png
+[2024-05-21T22:24:09.790+0000] {logging_mixin.py:188} INFO - 02 - problems of Maintainability.png (103uv-Pu36esW-lEyLbtbusp3E_P6ZjLe) - image/png
+[2024-05-21T22:24:09.790+0000] {logging_mixin.py:188} INFO - 01 - Maintainability.png (1WdGrTr1a7S7Djvq714yzPMGPxDlaW9ng) - image/png
+[2024-05-21T22:24:09.790+0000] {logging_mixin.py:188} INFO - 09 - Solutions to Consistency Problems.png (1RVyAlUg3RmBc4CSbfqscv5wZ8rQVhrEQ) - image/png
+[2024-05-21T22:24:09.790+0000] {logging_mixin.py:188} INFO - 08 - Problem 3.png (13nCb93uVFipcN8J81S0WrPTsfZ7X-e8w) - image/png
+[2024-05-21T22:24:09.791+0000] {logging_mixin.py:188} INFO - 07 - problem 2.png (1qwGiNj2Jo0QtYSwGe5PE8EWbbaC2XIvV) - image/png
+[2024-05-21T22:24:09.791+0000] {logging_mixin.py:188} INFO - 06 - problem 1 weak consistency.png (1TBd8-pCo50kQ34ARbFxxHzr83em_1Y9G) - image/png
+[2024-05-21T22:24:09.791+0000] {logging_mixin.py:188} INFO - 05 - Eventual Consistency and Linearizability.png (131eB5_7jOl98QDFJ0DuJ5rS4KiXFxG_-) - image/png
+[2024-05-21T22:24:09.791+0000] {logging_mixin.py:188} INFO - 04 - Consistency Models Strong and Weak.png (1uNyxNAKNHEzfp4y7wj10tAldN49XL9Eh) - image/png
+[2024-05-21T22:24:09.791+0000] {logging_mixin.py:188} INFO - 03 - Current Day Database Structure and Choices.png (17VWCemRCxhpXBsql3bs1-nkvXeXxsAOp) - image/png
+[2024-05-21T22:24:09.791+0000] {logging_mixin.py:188} INFO - 02 - Old Days Database Structure.png (1LyHRR9xnUAderO-lNRMuIo2DHlFVcW0a) - image/png
+[2024-05-21T22:24:09.792+0000] {logging_mixin.py:188} INFO - 01 - Consistency.png (1VOKub4m1fOCtrkFj4ZiGkTwSQ41oCpdQ) - image/png
+[2024-05-21T22:24:09.792+0000] {logging_mixin.py:188} INFO - 11 - Comparison Availability vs durability.png (18qiw0--zha5XuYGvv_1PPGFlq8QgnsLZ) - image/png
+[2024-05-21T22:24:09.792+0000] {logging_mixin.py:188} INFO - 10 - Durability Solution Data Integrity CHECKSUM.png (18jx6k6BfjmtcpAmZIzbnB0X_GwO5vZ2D) - image/png
+[2024-05-21T22:24:09.792+0000] {logging_mixin.py:188} INFO - 09 - Comparison Backup Replication RAID.png (1qVs4_5Ral1YIMb5y95D3k4Lvxzs8wDtL) - image/png
+[2024-05-21T22:24:09.792+0000] {logging_mixin.py:188} INFO - 08 - replication.png (1mUxAezWURa2135DhguquQ49Cs6eTcohv) - image/png
+[2024-05-21T22:24:09.792+0000] {logging_mixin.py:188} INFO - 07 - RAID 0.png (1Y5mluktAp0nmanvsw8njF1F2mSP42swr) - image/png
+[2024-05-21T22:24:09.793+0000] {logging_mixin.py:188} INFO - 06- Durability Solution - RAID 1.png (1PuYRByziSw0-EXRNzFsuTP12Xd5ocn_e) - image/png
+[2024-05-21T22:24:09.793+0000] {logging_mixin.py:188} INFO - 05 - incremental Backup.png (1KDAGx6NfIOAuTZXVuIOU132L6x95nXN2) - image/png
+[2024-05-21T22:24:09.793+0000] {logging_mixin.py:188} INFO - 04 - differential backup.png (1C3fnfEhFgmSAGA93A3P_7-FcjkWCQv6W) - image/png
+[2024-05-21T22:24:09.793+0000] {logging_mixin.py:188} INFO - 03 - full Backup.png (1MjF1UEypMQRuxsREfOUbzz3E0_Y6vjpk) - image/png
+[2024-05-21T22:24:09.793+0000] {logging_mixin.py:188} INFO - 02 - Durability Solution -  backup.png (1L3s6Y8vWHn5mjRuWOyx9CDxmsjUe-x02) - image/png
+[2024-05-21T22:24:09.793+0000] {logging_mixin.py:188} INFO - .DS_Store (1pabGVnDHWhTzIeFq6hh0WrhzBLUPxpVW) - application/octet-stream
+[2024-05-21T22:24:09.794+0000] {logging_mixin.py:188} INFO - 01 - Durability.png (1XAxUrYQobz7Vcm7qrvZXlFzqHOIO8oP2) - image/png
+[2024-05-21T22:24:09.794+0000] {logging_mixin.py:188} INFO - 12 - bandwidth.png (1-yqJG6v6OM5rx_g6ytMHZ3UPvvxfan1W) - image/png
+[2024-05-21T22:24:09.794+0000] {logging_mixin.py:188} INFO - 11 - Increase ThroughPut ( Replication ).png (1EDSR8O7zPf9JiZ5X2fer0wZqOxfO8M4i) - image/png
+[2024-05-21T22:24:09.794+0000] {logging_mixin.py:188} INFO - 10 - Increase ThroughPut ( Sharding Pattern).png (1WcJWLYF0sPFz8ZetkstmMiqt30kKOT3H) - image/png
+[2024-05-21T22:24:09.794+0000] {logging_mixin.py:188} INFO - .DS_Store (1KaVRPgDGZa5STafuH-uknuSPb_JLJwOj) - application/octet-stream
+[2024-05-21T22:24:09.794+0000] {logging_mixin.py:188} INFO - 09 -  Increase ThroughPut ( Stream Processing Patterns ).png (1lh5VZH434Lsbkslb7SUoJOf43BKARtNV) - image/png
+[2024-05-21T22:24:09.794+0000] {logging_mixin.py:188} INFO - 08 - Increase ThroughPut ( M.textClipping (1Ggt3SiX99qOeUfO7We5lH1ut5uldKnCy) - application/octet-stream
+[2024-05-21T22:24:09.795+0000] {logging_mixin.py:188} INFO - 08 - Increase ThroughPut ( Map Reduce ) .png (1DrgpNj1GmOiw-5SCyGoe1mTtNRLWVI3_) - image/png
+[2024-05-21T22:24:09.795+0000] {logging_mixin.py:188} INFO - 07 - throughput problems.png (1Hskg9hfUTTGIJjWk-sEqoaHD2HRpEdrm) - image/png
+[2024-05-21T22:24:09.795+0000] {logging_mixin.py:188} INFO - 06 - Calculating Latency in Percentile.png (1UQpr-rCkTrr-SOmKHrTaDI3xBTVx82l2) - image/png
+[2024-05-21T22:24:09.795+0000] {logging_mixin.py:188} INFO - 05 - Calculating Latency2.png (1WjBPTn3rvMuEyb-fy5o-5ccy_r3OOJ4-) - image/png
+[2024-05-21T22:24:09.795+0000] {logging_mixin.py:188} INFO - 05 - Calculating Latency.png (1T88jMH9gG46gF9M648dwl5mRyW4JKl8n) - image/png
+[2024-05-21T22:24:09.795+0000] {logging_mixin.py:188} INFO - 04 - Latency Problems.png (1H-hrSv1nPy7xavGtnRZ8DnyjDiGPjJuO) - image/png
+[2024-05-21T22:24:09.796+0000] {logging_mixin.py:188} INFO - 03 - Latency.png (1WOvHRAQ47hYl-JfF1cJlumg0caoUJRwl) - image/png
+[2024-05-21T22:24:09.796+0000] {logging_mixin.py:188} INFO - 02 - Performance (Time and Rate ) 2.png (1chnkEQ0CBT_D4FitI5mCUksdKP6Bq99o) - image/png
+[2024-05-21T22:24:09.796+0000] {logging_mixin.py:188} INFO - 01 - Performance (Time and Rate ).png (1emHBdoSZvBll3o67xEekbhsi2R2tO8zo) - image/png
+[2024-05-21T22:24:09.796+0000] {logging_mixin.py:188} INFO - 07 - Relationship Between Scalability and Elasticity.png (1OcxSlMK62GrcUqnJhZc3FhCBf-jMAUJC) - image/png
+[2024-05-21T22:24:09.796+0000] {logging_mixin.py:188} INFO - 06 - Scalability Graph.png (1bBzbsVmijWeboTGuqWoyqauws6dadvc-) - image/png
+[2024-05-21T22:24:09.796+0000] {logging_mixin.py:188} INFO - 05 - Elasticity Graph.png (1kbACKINIl01DugJuBMlFb61Ixa2GxDg9) - image/png
+[2024-05-21T22:24:09.796+0000] {logging_mixin.py:188} INFO - 04 - Elasticity.png (12cjiVs37uZh_XfDUIhU8ZlDTOpZRj9nd) - image/png
+[2024-05-21T22:24:09.797+0000] {logging_mixin.py:188} INFO - 03 - Vertical and horizontal conjunction.png (10YlNEi9P-sJbD4HAfRHhwNTQ2UX0PCMg) - image/png
+[2024-05-21T22:24:09.797+0000] {logging_mixin.py:188} INFO - 02-Challenges in Horizontal Scaling.png (1QptAdLnxvRkJ-B3nSayk1s7udX4M3VVo) - image/png
+[2024-05-21T22:24:09.797+0000] {logging_mixin.py:188} INFO - 01-Scaling Up vs Scaling Out.png (1X0GcLNMDJOr49W42YeFAjzEn4vtn0jFU) - image/png
+[2024-05-21T22:24:09.797+0000] {logging_mixin.py:188} INFO - 06 - Relating reliability resilience fault-tolerance high-availabiliity.png (1rY_3ctW-ofrnzUu9OeEsHyjCvvlfgO9b) - image/png
+[2024-05-21T22:24:09.797+0000] {logging_mixin.py:188} INFO - 05 - Reliability.png (1bc7DP3TL4eFvK_9A1_N0iWaNf7n2aAwI) - image/png
+[2024-05-21T22:24:09.797+0000] {logging_mixin.py:188} INFO - 04 - Resilience.png (1mgltL49IicXgXtZ84LteikMGoQB-rZ8P) - image/png
+[2024-05-21T22:24:09.797+0000] {logging_mixin.py:188} INFO - 03 - Differences Between Fault Tolerance and High Availability 2.png (1l4f6RkklhS_uSnwPA2tkDbyEkxAUhb5I) - image/png
+[2024-05-21T22:24:09.798+0000] {logging_mixin.py:188} INFO - 02 - Differences Between Fault Tolerance and High Availability.png (1Z7lQ-ORtRvMKxHmjLL6y988bic0e49bE) - image/png
+[2024-05-21T22:24:09.798+0000] {logging_mixin.py:188} INFO - 01 - faultTolerance.png (1BtiygYHt7kHLgda0lDX4Wm98vq-ZDIpN) - image/png
+[2024-05-21T22:24:09.798+0000] {logging_mixin.py:188} INFO - 03 - Service-Level Objective : Service Level Agreement.png (1I50gSsvuwWIwxbGhDrlR9LHdQRlFKzni) - image/png
+[2024-05-21T22:24:09.798+0000] {logging_mixin.py:188} INFO - 01 - design principles behind high availability.png (1rU4427p54GHFl2klu2qDgcRQkILHPzx7) - image/png
+[2024-05-21T22:24:09.798+0000] {logging_mixin.py:188} INFO - 02 - processes behind high availability.png (1Fg_7AkAitsIMMzQ_BO0K9FpC4T-KlXH-) - image/png
+[2024-05-21T22:24:09.798+0000] {logging_mixin.py:188} INFO - dzr-cqsf-vdz (2024-02-22 11:10 GMT) (11jN9SqtdAS0Al9QbpfplFBhh8D2JaEVi) - text/plain
+[2024-05-21T22:24:09.799+0000] {logging_mixin.py:188} INFO - dzr-cqsf-vdz (2024-02-22 11:10 GMT) (1RVcbEuxl0rsLfSIRfsLkX4OoxfPAvgLB) - video/mp4
+[2024-05-21T22:24:09.799+0000] {logging_mixin.py:188} INFO - dzr-cqsf-vdz - Feb 22, 2024 (1kAkpz207DRh3ljSOdxnqY5UkHlgSZHPguKVRU0G3kJY) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.799+0000] {logging_mixin.py:188} INFO - Untitled document (1VKLCQfqBTKECaE_A8601FlFYulREtLwm8fxUzQz_aJ0) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.799+0000] {logging_mixin.py:188} INFO - mzg-qfei-jch (2024-02-21 11:04 GMT) (1emhpcqkdIvvtM6AtSiAsOoaw2_UoC7Bp) - text/plain
+[2024-05-21T22:24:09.799+0000] {logging_mixin.py:188} INFO - mzg-qfei-jch (2024-02-21 11:04 GMT) (1E9I9Z5JTU1lH6imRoHsEmHeVmakZtRPR) - video/mp4
+[2024-05-21T22:24:09.799+0000] {logging_mixin.py:188} INFO - vqt-ubtm-vef (2024-02-20 11:06 GMT) (1sw6_KheTyThbWjW2tv3wIQNnm1ltSW72) - text/plain
+[2024-05-21T22:24:09.799+0000] {logging_mixin.py:188} INFO - vqt-ubtm-vef (2024-02-20 11:06 GMT) (1Mb-fazUusuGh7os5HaHhukRc-vYspDzq) - video/mp4
+[2024-05-21T22:24:09.800+0000] {logging_mixin.py:188} INFO - vqt-ubtm-vef - Feb 20, 2024 (1KHBT7_v8LkYSFfEXDxhJN0URFWSysq6vvqcIJ7K3KOg) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.800+0000] {logging_mixin.py:188} INFO - vqt-ubtm-vef - Feb 20, 2024 (1T_MkfUi3kSwAdUBjmIU4mqvIAni53LmWlVP-Z7Gf1Bc) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.800+0000] {logging_mixin.py:188} INFO - yqv-pbug-uqp (2024-02-19 11:02 GMT) (1FwUDgIvqQRbwJ8V1jQoUKE9jcVLDoZGX) - text/plain
+[2024-05-21T22:24:09.800+0000] {logging_mixin.py:188} INFO - yqv-pbug-uqp (2024-02-19 11:02 GMT) (1PXnD6UUfbYbooxwJxgQJ5Eji6VgUXIav) - video/mp4
+[2024-05-21T22:24:09.800+0000] {logging_mixin.py:188} INFO - Blukers CRM (19IHfu9kP0vFXie241z17ZZ63wa-TjCjEnF-UkUIE7_E) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.800+0000] {logging_mixin.py:188} INFO - yqv-pbug-uqp - Feb 19, 2024 (131lHdx8xlkQGweFNv4iBVE9zbzzybHk2dKAO8OG5nkk) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.800+0000] {logging_mixin.py:188} INFO - rvb-qqir-zah (2024-02-16 12:27 GMT) (1uvGAKqyVrOonaHpJzAgrryjlm1nClmpz) - text/plain
+[2024-05-21T22:24:09.801+0000] {logging_mixin.py:188} INFO - rvb-qqir-zah (2024-02-16 12:27 GMT) (1byim5RDXSy4ce10BZ6nelgOwb_Ev6CbQ) - video/mp4
+[2024-05-21T22:24:09.801+0000] {logging_mixin.py:188} INFO - rvb-qqir-zah - Feb 16, 2024 (1n7Tuqp_PFFkG68rl_xJ64piJLtm3xqUgPHTtavy_BZc) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.801+0000] {logging_mixin.py:188} INFO - ojq-azse-igw (2024-02-15 11:55 GMT) (1Fo7FE3KQ0PpbACnwK3VBaUQ0kC7TVsrR) - video/mp4
+[2024-05-21T22:24:09.801+0000] {logging_mixin.py:188} INFO - kgb-nmtx-bfo - Feb 14, 2024 (1CBwwq3w0xDo-Xr4RBRUVoPnbs67_V05dOiBpUB7eX8M) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.801+0000] {logging_mixin.py:188} INFO - kgb-nmtx-bfo (2024-02-14 11:11 GMT) (1GqNBd-t-DbsdqY8l_X6l-zd1MyoUYGbf) - text/plain
+[2024-05-21T22:24:09.801+0000] {logging_mixin.py:188} INFO - kgb-nmtx-bfo (2024-02-14 11:11 GMT) (1oOvP7ekvIafdnJYudkb1bDK9MhqGY1Mn) - video/mp4
+[2024-05-21T22:24:09.802+0000] {logging_mixin.py:188} INFO - Programming paradigms  (1DRfELsM2HurxcOuY7P9cDmPxm8oCqD5G1U0mL-RBq8o) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.802+0000] {logging_mixin.py:188} INFO - kxs-cryx-raq (2024-02-13 11:14 GMT) (1FiqUN86OtGFlCWKk3FLFy1jY1o37e1v2) - text/plain
+[2024-05-21T22:24:09.802+0000] {logging_mixin.py:188} INFO - kxs-cryx-raq (2024-02-13 11:14 GMT) (1_OCccWqYs12Ue10UBR2aQCB9joONOpc5) - video/mp4
+[2024-05-21T22:24:09.802+0000] {logging_mixin.py:188} INFO - Untitled document (1f7ctowJSG16iAxs48fhNIF4rOBre9Z6tSrYVO06M30o) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.802+0000] {logging_mixin.py:188} INFO - kxs-cryx-raq - Feb 13, 2024 (12sWmeTM6gWrth1ZQtCm4WEWOJIzpXuo8K2eNMR5H1OQ) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.802+0000] {logging_mixin.py:188} INFO - zjy-iizm-pcx (2024-02-12 21:35 GMT) (1SI079HsHTVaMYk9wT-4qdVNx5A7OVLoG) - text/plain
+[2024-05-21T22:24:09.802+0000] {logging_mixin.py:188} INFO - zjy-iizm-pcx (2024-02-12 21:35 GMT) (1aO8Rh8Amouap-8vHYMGUMp82eFRHWc96) - video/mp4
+[2024-05-21T22:24:09.803+0000] {logging_mixin.py:188} INFO - zjy-iizm-pcx - Feb 12, 2024 (19CJWCP30S3TeJTxOhQm_9y1vaHUepeGHaQX1GmZCVj8) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.803+0000] {logging_mixin.py:188} INFO - enf-pbjy-auw - Jan 26, 2024 (1qJE7pFcXSNYyl6ot0_SfhNXJb2RNqLwUY0mVgZvIn9o) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.803+0000] {logging_mixin.py:188} INFO - hjr-shqc-jgf - Feb 9, 2024 (1_OuCy830ixwJIFwGI1IQzgA4s1APiHq1_2q5xYeu23M) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.803+0000] {logging_mixin.py:188} INFO - nak-kbfj-qen (2024-02-08 19:23 GMT) (1q0kBi2HglVlp1sVtT6Bd91PqKM3t7iAm) - video/mp4
+[2024-05-21T22:24:09.803+0000] {logging_mixin.py:188} INFO - SystemDesign (157CmeFJ31KdY5wKOmy4ctYb3b7dkBlCwDldqD4NKDbo) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.803+0000] {logging_mixin.py:188} INFO - yvt-jajy-xcv (2024-02-07 19:54 GMT) (16wIYVAthA4KB_BCcFzyZ0WrYmSEqPpdE) - text/plain
+[2024-05-21T22:24:09.804+0000] {logging_mixin.py:188} INFO - yvt-jajy-xcv - Feb 7, 2024 (1niDHCgCa7m_PyCWH_hJbCUYQJa4S-HLueoH8AXTTAXU) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.804+0000] {logging_mixin.py:188} INFO - cmn-qrbo-tgn (2024-02-06 19:15 GMT) (1OdLXc_opV9r80VY_HBfiqX5cRFml0Gx8) - text/plain
+[2024-05-21T22:24:09.804+0000] {logging_mixin.py:188} INFO - cmn-qrbo-tgn (2024-02-06 19:15 GMT) (1wtiJubEuNvIbeID0t3ga2AvvixwuEfsq) - video/mp4
+[2024-05-21T22:24:09.804+0000] {logging_mixin.py:188} INFO - cmn-qrbo-tgn - Feb 6, 2024 (1QDctN95GnV0LkvB1VtZWnEpc_EkNZmU5aJ-if8DfuXU) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.804+0000] {logging_mixin.py:188} INFO - Untitled drawing (1_WSsZexPM16im8yawO8QFwI569eMZZ4Reukgu_N2_uU) - application/vnd.google-apps.drawing
+[2024-05-21T22:24:09.804+0000] {logging_mixin.py:188} INFO - abt-jjqm-fae (2024-02-05 19:11 GMT) (1dc5zcVG-5YIOlBxC5sF7vljR1BsNvgJd) - text/plain
+[2024-05-21T22:24:09.804+0000] {logging_mixin.py:188} INFO - abt-jjqm-fae (2024-02-05 19:11 GMT) (1WiI0-min9aV5uPq4T3ZesTzDl1E-T-u6) - video/mp4
+[2024-05-21T22:24:09.805+0000] {logging_mixin.py:188} INFO - abt-jjqm-fae - Feb 5, 2024 (1hSn5rTbw1ouU3ZQOMyofw777vt6kbgMhv4Xdmal12EY) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.805+0000] {logging_mixin.py:188} INFO - mvv-qjae-jkv (2024-02-05 01:41 GMT) (1II6bxJxGC-m32IAuW6QdY9TZF-vDz4jQ) - video/mp4
+[2024-05-21T22:24:09.805+0000] {logging_mixin.py:188} INFO - qda-biro-hrq (2024-02-02 19:52 GMT) (1NmygB2EK1LeY0xiUhrbA-2-VLlAnRDSY) - text/plain
+[2024-05-21T22:24:09.805+0000] {logging_mixin.py:188} INFO - qda-biro-hrq (2024-02-02 19:52 GMT) (1pXcl20XQ0aA16yBpaJE2ArQGrG3wbpa6) - video/mp4
+[2024-05-21T22:24:09.805+0000] {logging_mixin.py:188} INFO - dbw-aqey-mjf - Feb 1, 2024 (1TY6Aw_Mmwwc4JSLKBuJPpBjqqtTW74J95O3eZ9eyuFQ) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.805+0000] {logging_mixin.py:188} INFO - dbw-aqey-mjf (2024-02-01 19:13 GMT) (1M7vEQSuqigGZTC1H1KafhsGmvOGcgNWZ) - text/plain
+[2024-05-21T22:24:09.806+0000] {logging_mixin.py:188} INFO - dbw-aqey-mjf (2024-02-01 19:13 GMT) (1rHubKGFPaBbYiXi41niOoFr_rDSPRtEu) - video/mp4
+[2024-05-21T22:24:09.806+0000] {logging_mixin.py:188} INFO - Back of the Envelope estimation (1Hlkm5ruviAkOgZ6G-mVvC8ASItB97KoGmALH0Ah2qTg) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.806+0000] {logging_mixin.py:188} INFO - wwn-whwk-gyh (2024-01-31 19:37 GMT) (1z2lQHHMRx3Htf9Q_sksWpwPY4gEwEIRW) - text/plain
+[2024-05-21T22:24:09.806+0000] {logging_mixin.py:188} INFO - wwn-whwk-gyh (2024-01-31 19:37 GMT) (1BWfYXmMR8C24kPuCc0uWAHsMg2dbuL7G) - video/mp4
+[2024-05-21T22:24:09.806+0000] {logging_mixin.py:188} INFO - Two pointers (1zPNBF-Qs4OSrOz59J3F-nKuTRD-NIgPusJsovhLPCj8) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.806+0000] {logging_mixin.py:188} INFO - wwn-whwk-gyh - Jan 31, 2024 (1cxzODYSSobxUWJ8j9vaNl1pS7ygWomC0dzJy7jq4XBY) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.806+0000] {logging_mixin.py:188} INFO - wyr-zihv-och (2024-01-31 14:23 GMT) (15w-Mrpq5DeMQr8fdzhgzi0lpO9dYJmrh) - video/mp4
+[2024-05-21T22:24:09.807+0000] {logging_mixin.py:188} INFO - jjn-fsda-ure (2024-01-30 19:13 GMT) (1TADyqigwZC_UIfnPK-fUaOMzlAgSwRM2) - text/plain
+[2024-05-21T22:24:09.807+0000] {logging_mixin.py:188} INFO - jjn-fsda-ure (2024-01-30 19:13 GMT) (1TEyEJrpFQFvgHBWEinwHokN8t8K9vdu1) - video/mp4
+[2024-05-21T22:24:09.807+0000] {logging_mixin.py:188} INFO - Untitled drawing (1WVvifcqEOmg_To3EtK4Nb-DM6lTRqrO7KPXOysaeiqM) - application/vnd.google-apps.drawing
+[2024-05-21T22:24:09.807+0000] {logging_mixin.py:188} INFO - platform (1u5EBdBzK94iT5esJ8hcP8OSi1LyJ9m3kOmdOR4H_3QQ) - application/vnd.google-apps.drawing
+[2024-05-21T22:24:09.807+0000] {logging_mixin.py:188} INFO - Untitled document (1RU8MUdbUJl0dlygQ27CM1yh4nN8I1COJCBwfj9ipKgo) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.807+0000] {logging_mixin.py:188} INFO - IMG_6171.MOV (1fwRBjc4CwwW2NDaJZhPBHf4X6C4HCqs-) - video/quicktime
+[2024-05-21T22:24:09.807+0000] {logging_mixin.py:188} INFO - Untitled document (17CwsMJI_1nwbLg_t78aWZwozz-JItsQn5ZN7L4E4O-4) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.808+0000] {logging_mixin.py:188} INFO - vvr-taxw-iup (2024-01-29 19:28 GMT) (1Ce-2d2d3_6chqIO-Y6SF3VyIZIJqJUFZ) - text/plain
+[2024-05-21T22:24:09.808+0000] {logging_mixin.py:188} INFO - vvr-taxw-iup (2024-01-29 19:28 GMT) (1cDpBVNbfxWAthsCh3e_uTRGM7yLPPNLk) - video/mp4
+[2024-05-21T22:24:09.808+0000] {logging_mixin.py:188} INFO - Untitled spreadsheet (1im8J6pO2tsoFZdfkcwZFYIAvhMYcuShEImqCX7DmusM) - application/vnd.google-apps.spreadsheet
+[2024-05-21T22:24:09.808+0000] {logging_mixin.py:188} INFO - ewb-oyoh-bsj (2024-01-27 03:50 GMT) (1Osc8R2vDXaDyBTGMtHqbXd9kYC9vjd24) - video/mp4
+[2024-05-21T22:24:09.808+0000] {logging_mixin.py:188} INFO - qtq-kmgu-gjo (2024-01-27 03:33 GMT) (1hSicgCX4TIoG1ehTzsYi84N022fDIb8B) - video/mp4
+[2024-05-21T22:24:09.808+0000] {logging_mixin.py:188} INFO - xty-ufyy-yxx (2024-01-27 03:10 GMT) (1Yq-EXzvY6GMvoGWFi1VTQIN486DENxiS) - video/mp4
+[2024-05-21T22:24:09.808+0000] {logging_mixin.py:188} INFO - WorkSection 26-01-24 (1e9tvGkGZQAwn8WR0mLxHwZF8VSVB2JrP) - video/mp4
+[2024-05-21T22:24:09.809+0000] {logging_mixin.py:188} INFO - Work Section 24-01-24 (1X55BJatjUJ5f1fMynj7rpwNmxlK8RZHZ) - video/mp4
+[2024-05-21T22:24:09.809+0000] {logging_mixin.py:188} INFO - WorkSection 25-01-24 (1_dVDZyK8OuUgb2DnLn6GHkfimoMu1v_X) - video/mp4
+[2024-05-21T22:24:09.809+0000] {logging_mixin.py:188} INFO - enf-pbjy-auw (2024-01-26 19:34 GMT) (12NGbb2dQFpMiK9jBEshA7MFcWypY25H9) - text/plain
+[2024-05-21T22:24:09.809+0000] {logging_mixin.py:188} INFO - Documentation (1NSAFDkcu0zRK2TvXJT6Ftg1WVMJLKSnpLtMyPgMDKQQ) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.809+0000] {logging_mixin.py:188} INFO - enf-pbjy-auw - Jan 26, 2024 (1d9IAvZDxMdjDAXZS5tojY3Qt3tE8S9CyPpjuCBHoDXk) - application/vnd.google-apps.jam
+[2024-05-21T22:24:09.809+0000] {logging_mixin.py:188} INFO - tiz-kdck-geo (2024-01-24 19:37 GMT) (1h-Jor35VWusXuGdJcmwJYROfj5xEEUI4) - text/plain
+[2024-05-21T22:24:09.809+0000] {logging_mixin.py:188} INFO - Cloud Developer Series 1 (1hsLFQdKsg-_9vg02xcbpF2m1a1gsUgvBvj7iLMvI-90) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.810+0000] {logging_mixin.py:188} INFO - AWS Certified Developer Slides v30.pdf (1-jKQbaWDl-IMHwOm-tTr6txAVWiQER6w) - application/pdf
+[2024-05-21T22:24:09.810+0000] {logging_mixin.py:188} INFO - Blueprint of Code2Stories (11otO3lzDth3oKR2FM_6Qr0Nve9_2QCTtLCdkM2ywpok) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.810+0000] {logging_mixin.py:188} INFO - Manim Documentation (1-UzAIr0Vj8MCeGzHLv4OfA7DYL6F55geVDPj2IMuuOs) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.810+0000] {logging_mixin.py:188} INFO - The Memory Match Challenge ( Leetcode 1 : Two Sum ) (1uMsCRfukVGa-V-lw5-gNcJEMgfL4HcZdw0QAf6ZdjHM) - application/vnd.google-apps.document
+[2024-05-21T22:24:09.810+0000] {logging_mixin.py:188} INFO - Code2StoriesOfficialLogo.png (1rzvzfpPi_61_GMdEYHfT3Rci9VPhh54o) - image/png
+[2024-05-21T22:24:09.810+0000] {logging_mixin.py:188} INFO - PHOTO-2024-01-06-03-43-54.jpg (1ACYfteXVm5BeBLJNBC3Mrsa4AzHEM1Kw) - image/jpeg
+[2024-05-21T22:24:11.270+0000] {python.py:237} INFO - Done. Returned value was: [{'file_id': '10vw5JvMXcZK3emeJeCIzRxXW446lwkcs', 'file_name': 'tgw-qmre-gqs (2024-05-21 13:24 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1LMAOh1ngIYv7__EWl2M4AVMXRAgiSqTk', 'file_name': 'tvk-sxuk-ttb (2024-05-16 11:45 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1v3xdQfnD62eFFzRY71dIbVzMeKUzOVOM', 'file_name': 'nkn-njnp-eur (2024-05-14 11:17 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '19Uw-na4K1zsel6hHYru9aybd-AFNIXm8', 'file_name': 'yvt-jajy-xcv (2024-02-07 19:54 GMT)', 'file_extension': 'mp4'}, {'file_id': '1dmvK1aTkWl6XqK4CbIai4sT56EXT5pv_', 'file_name': 'dak-gvwv-zux (2024-05-13 11:31 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1AN9a4JBwv5YsswqbkRKb1MvA1tgHv83a', 'file_name': 'yom-dxdk-jzf (2024-04-05 10:36 GMT)', 'file_extension': 'mp4'}, {'file_id': '14NdsBN7lI3Ib9RMKDOsQxS51-0n36v3o', 'file_name': 'vjs-yfax-cym (2024-05-10 12:07 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1BKkJUHc7ttdaEg0zD3R0Se0s-XfMoO_8', 'file_name': 'kot-nyft-feo (2024-05-09 12:22 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1mnytj_kppV8WENcxWEQchAgoVDkoUIAI', 'file_name': 'tjn-qymu-uzf (2024-05-08 11:30 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1FcAReCkja3BpFCGqKzCw5fPAgUYi76hT', 'file_name': 'vtz-wwwk-kzv (2024-05-07 11:13 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '10hCDX9d99P-X4CSLP8qslTpxe4o50Na3', 'file_name': 'hsm-sdwj-vqu (2024-05-06 11:25 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1OL_oaQfTbmz7-LYC-1BdXnzjH-uDyR79', 'file_name': 'cid-chva-ion (2024-05-04 11:37 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1NyUFOxDozQfGlouu-XY7mKKakMg7O5u2', 'file_name': 'vzz-uacc-hjz (2024-04-18 16:40 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1k0cXjpyDIxveSvn8Ved1Ha9jYu5ijch8', 'file_name': 'kcn-gmwr-jnq (2024-04-15 13:37 GMT+1)', 'file_extension': 'mp4'}, {'file_id': '1DN55z3Dgzw-EvTCSl-qyE4RGAUfsV4K2', 'file_name': 'yfk-yhyz-wha (2024-04-08 14:19 GMT)', 'file_extension': 'mp4'}, {'file_id': '1Vgf3g9qj_Kat2Ie98P6S99nfvJDWeicV', 'file_name': 'vvh-nghi-rom (2024-04-01 12:35 GMT)', 'file_extension': 'mp4'}, {'file_id': '1kMWmEFe3seQGrGfku0BbXhZNnYuMiA7Z', 'file_name': 'vvh-nghi-rom (2024-04-01 11:22 GMT)', 'file_extension': 'mp4'}, {'file_id': '1HJuTQHX3L_hfG77z2qeM4LjGOGiJBrhD', 'file_name': 'ioe-wkky-qwx (2024-03-26 11:24 GMT)', 'file_extension': 'mp4'}, {'file_id': '10KbpFBZYA9BOtx4YozUgDmkm4qZdRtgE', 'file_name': 'ioe-wkky-qwx (2024-03-26 11:20 GMT)', 'file_extension': 'mp4'}, {'file_id': '1LENVUfOSEOzL2tghRyoZ7w64wE9Yw8LG', 'file_name': 'eaq-yxpn-ydf (2024-03-22 14:03 GMT)', 'file_extension': 'mp4'}, {'file_id': '1EU273OgZHyVWNoVzDWXdBoV5Ash_0XwH', 'file_name': 'ges-qyco-iok (2024-03-21 12:53 GMT)', 'file_extension': 'mp4'}, {'file_id': '1EcpbHWsks_xRX7JpZCCY4amKmYSKbjUT', 'file_name': 'eaq-iynm-jpd (2024-03-19 11:22 GMT)', 'file_extension': 'mp4'}, {'file_id': '1cawbpL28sg5vZJNu5EtPk_oIngyzSkoI', 'file_name': 'enm-eiin-tva (2024-03-18 12:15 GMT)', 'file_extension': 'mp4'}, {'file_id': '1E9MwPe57UMci06f2mIL6Y8fqmYUPiDTy', 'file_name': 'gnj-gwgq-sph (2024-03-18 10:13 GMT)', 'file_extension': 'mp4'}, {'file_id': '1xvmlDNe06lqLFZyRWMWHLRdGl7b96tsr', 'file_name': 'wfx-kbtq-yxn (2024-03-14 10:43 GMT)', 'file_extension': 'mp4'}, {'file_id': '1hp7SoJyQTTV0qN2U8WPM4tZPDmx7DJVI', 'file_name': 'ahw-sxia-enf (2024-03-12 11:47 GMT)', 'file_extension': 'mp4'}, {'file_id': '1wcnWHRBsLlqduIQr2vFKRW02wD-HqmuT', 'file_name': 'mtw-khih-bzu (2024-03-07 12:52 GMT)', 'file_extension': 'mp4'}, {'file_id': '1_nZLMQVYzokRyanYapJ3AYapP-nWoeMm', 'file_name': 'cqw-yqak-cus (2024-03-06 11:33 GMT)', 'file_extension': 'mp4'}, {'file_id': '1dkldMMFCI5HwVmtlvS2bS53T48Yy_EfR', 'file_name': 'ogw-fjsy-ogg (2024-03-05 11:14 GMT)', 'file_extension': 'mp4'}, {'file_id': '1AtBZ759KnKDXGWNCi8DS6vZr7lpv7g04', 'file_name': 'pwa-wvyx-kav (2024-03-04 11:06 GMT)', 'file_extension': 'mp4'}, {'file_id': '1dlRqNHQOEivdgTTNWiVEpxQ5pq6qxSjC', 'file_name': 'hji-jvrh-dro (2024-03-01 11:10 GMT)', 'file_extension': 'mp4'}, {'file_id': '1RiH4w42yBbaAyb8d6cTU17vxcc7Z3YWO', 'file_name': 'ezv-uotz-avr (2024-02-29 11:38 GMT)', 'file_extension': 'mp4'}, {'file_id': '1bxUEtFpXL-LAAvBhYETi1DkWvRoWFAhj', 'file_name': 'skc-yohn-mad (2024-02-28 13:12 GMT)', 'file_extension': 'mp4'}, {'file_id': '1IxhCchbLe4nBfjUKweu2k5PFwcISFvRv', 'file_name': 'nvd-gwci-ebm (2024-02-28 11:06 GMT)', 'file_extension': 'mp4'}, {'file_id': '1PXzKDdnvX-XFckNKjOy7iMox-4WM8lGb', 'file_name': 'iwg-gooq-vjw (2024-02-27 11:10 GMT)', 'file_extension': 'mp4'}, {'file_id': '1a34y1mybCKracVKIDc8fprjNmwGy7pxY', 'file_name': 'dwc-mqqh-vot (2024-02-26 11:24 GMT)', 'file_extension': 'mp4'}, {'file_id': '1XON9YcYYb-VOKq6BoctK6dpTS5PSqwCD', 'file_name': 'ock-vudy-ycb (2024-02-23 12:06 GMT)', 'file_extension': 'mp4'}, {'file_id': '1RVcbEuxl0rsLfSIRfsLkX4OoxfPAvgLB', 'file_name': 'dzr-cqsf-vdz (2024-02-22 11:10 GMT)', 'file_extension': 'mp4'}, {'file_id': '1E9I9Z5JTU1lH6imRoHsEmHeVmakZtRPR', 'file_name': 'mzg-qfei-jch (2024-02-21 11:04 GMT)', 'file_extension': 'mp4'}, {'file_id': '1Mb-fazUusuGh7os5HaHhukRc-vYspDzq', 'file_name': 'vqt-ubtm-vef (2024-02-20 11:06 GMT)', 'file_extension': 'mp4'}, {'file_id': '1PXnD6UUfbYbooxwJxgQJ5Eji6VgUXIav', 'file_name': 'yqv-pbug-uqp (2024-02-19 11:02 GMT)', 'file_extension': 'mp4'}, {'file_id': '1byim5RDXSy4ce10BZ6nelgOwb_Ev6CbQ', 'file_name': 'rvb-qqir-zah (2024-02-16 12:27 GMT)', 'file_extension': 'mp4'}, {'file_id': '1Fo7FE3KQ0PpbACnwK3VBaUQ0kC7TVsrR', 'file_name': 'ojq-azse-igw (2024-02-15 11:55 GMT)', 'file_extension': 'mp4'}, {'file_id': '1oOvP7ekvIafdnJYudkb1bDK9MhqGY1Mn', 'file_name': 'kgb-nmtx-bfo (2024-02-14 11:11 GMT)', 'file_extension': 'mp4'}, {'file_id': '1_OCccWqYs12Ue10UBR2aQCB9joONOpc5', 'file_name': 'kxs-cryx-raq (2024-02-13 11:14 GMT)', 'file_extension': 'mp4'}, {'file_id': '1aO8Rh8Amouap-8vHYMGUMp82eFRHWc96', 'file_name': 'zjy-iizm-pcx (2024-02-12 21:35 GMT)', 'file_extension': 'mp4'}, {'file_id': '1q0kBi2HglVlp1sVtT6Bd91PqKM3t7iAm', 'file_name': 'nak-kbfj-qen (2024-02-08 19:23 GMT)', 'file_extension': 'mp4'}, {'file_id': '1wtiJubEuNvIbeID0t3ga2AvvixwuEfsq', 'file_name': 'cmn-qrbo-tgn (2024-02-06 19:15 GMT)', 'file_extension': 'mp4'}, {'file_id': '1WiI0-min9aV5uPq4T3ZesTzDl1E-T-u6', 'file_name': 'abt-jjqm-fae (2024-02-05 19:11 GMT)', 'file_extension': 'mp4'}, {'file_id': '1II6bxJxGC-m32IAuW6QdY9TZF-vDz4jQ', 'file_name': 'mvv-qjae-jkv (2024-02-05 01:41 GMT)', 'file_extension': 'mp4'}, {'file_id': '1pXcl20XQ0aA16yBpaJE2ArQGrG3wbpa6', 'file_name': 'qda-biro-hrq (2024-02-02 19:52 GMT)', 'file_extension': 'mp4'}, {'file_id': '1rHubKGFPaBbYiXi41niOoFr_rDSPRtEu', 'file_name': 'dbw-aqey-mjf (2024-02-01 19:13 GMT)', 'file_extension': 'mp4'}, {'file_id': '1BWfYXmMR8C24kPuCc0uWAHsMg2dbuL7G', 'file_name': 'wwn-whwk-gyh (2024-01-31 19:37 GMT)', 'file_extension': 'mp4'}, {'file_id': '15w-Mrpq5DeMQr8fdzhgzi0lpO9dYJmrh', 'file_name': 'wyr-zihv-och (2024-01-31 14:23 GMT)', 'file_extension': 'mp4'}, {'file_id': '1TEyEJrpFQFvgHBWEinwHokN8t8K9vdu1', 'file_name': 'jjn-fsda-ure (2024-01-30 19:13 GMT)', 'file_extension': 'mp4'}, {'file_id': '1cDpBVNbfxWAthsCh3e_uTRGM7yLPPNLk', 'file_name': 'vvr-taxw-iup (2024-01-29 19:28 GMT)', 'file_extension': 'mp4'}, {'file_id': '1Osc8R2vDXaDyBTGMtHqbXd9kYC9vjd24', 'file_name': 'ewb-oyoh-bsj (2024-01-27 03:50 GMT)', 'file_extension': 'mp4'}, {'file_id': '1hSicgCX4TIoG1ehTzsYi84N022fDIb8B', 'file_name': 'qtq-kmgu-gjo (2024-01-27 03:33 GMT)', 'file_extension': 'mp4'}, {'file_id': '1Yq-EXzvY6GMvoGWFi1VTQIN486DENxiS', 'file_name': 'xty-ufyy-yxx (2024-01-27 03:10 GMT)', 'file_extension': 'mp4'}, {'file_id': '1e9tvGkGZQAwn8WR0mLxHwZF8VSVB2JrP', 'file_name': 'WorkSection 26-01-24', 'file_extension': 'mp4'}, {'file_id': '1X55BJatjUJ5f1fMynj7rpwNmxlK8RZHZ', 'file_name': 'Work Section 24-01-24', 'file_extension': 'mp4'}, {'file_id': '1_dVDZyK8OuUgb2DnLn6GHkfimoMu1v_X', 'file_name': 'WorkSection 25-01-24', 'file_extension': 'mp4'}]
+[2024-05-21T22:24:11.276+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-21T22:24:11.305+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=video_processing_DAG, task_id=getNewVideoSessions, run_id=manual__2024-05-21T22:24:05.186196+00:00, execution_date=20240521T222405, start_date=20240521T222406, end_date=20240521T222411
+[2024-05-21T22:24:11.335+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-21T22:24:11.353+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-21T22:24:11.354+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

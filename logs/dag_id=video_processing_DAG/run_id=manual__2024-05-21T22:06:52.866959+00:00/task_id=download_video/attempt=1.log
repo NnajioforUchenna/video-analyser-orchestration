@@ -1,0 +1,27 @@
+[2024-05-21T22:07:03.377+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-21T22:07:03.386+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: video_processing_DAG.download_video manual__2024-05-21T22:06:52.866959+00:00 [queued]>
+[2024-05-21T22:07:03.389+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: video_processing_DAG.download_video manual__2024-05-21T22:06:52.866959+00:00 [queued]>
+[2024-05-21T22:07:03.389+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-21T22:07:03.393+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): download_video> on 2024-05-21 22:06:52.866959+00:00
+[2024-05-21T22:07:03.396+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=119) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-21T22:07:03.396+0000] {standard_task_runner.py:63} INFO - Started process 123 to run task
+[2024-05-21T22:07:03.397+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'video_processing_DAG', 'download_video', 'manual__2024-05-21T22:06:52.866959+00:00', '--job-id', '80', '--raw', '--subdir', 'DAGS_FOLDER/video_processing_dag.py', '--cfg-path', '/tmp/tmp4v619a8a']
+[2024-05-21T22:07:03.398+0000] {standard_task_runner.py:91} INFO - Job 80: Subtask download_video
+[2024-05-21T22:07:03.414+0000] {task_command.py:426} INFO - Running <TaskInstance: video_processing_DAG.download_video manual__2024-05-21T22:06:52.866959+00:00 [running]> on host e45743a5f05a
+[2024-05-21T22:07:03.438+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='code2stories@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='video_processing_DAG' AIRFLOW_CTX_TASK_ID='download_video' AIRFLOW_CTX_EXECUTION_DATE='2024-05-21T22:06:52.866959+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-21T22:06:52.866959+00:00'
+[2024-05-21T22:07:03.439+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-21T22:07:04.444+0000] {__init__.py:49} INFO - file_cache is only supported with oauth2client<4.0.0
+[2024-05-21T22:07:05.098+0000] {logging_mixin.py:188} INFO - File name: ioe-wkky-qwx (2024-03-26 11:20 GMT)
+[2024-05-21T22:07:05.101+0000] {logging_mixin.py:188} INFO - 2024-03-26_11_20.mp4
+[2024-05-21T22:07:08.464+0000] {logging_mixin.py:188} INFO - Download 100% complete.
+[2024-05-21T22:07:08.467+0000] {logging_mixin.py:188} INFO - The video has been downloaded and saved successfully as 2024-03-26_11_20.mp4.
+[2024-05-21T22:07:08.467+0000] {video_processing_dag.py:53} INFO - Downloading Video
+[2024-05-21T22:07:08.471+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2024-05-21T22:07:08.472+0000] {python.py:237} INFO - Done. Returned value was: 2024-03-26_11_20.mp4
+[2024-05-21T22:07:08.473+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-21T22:07:08.482+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=video_processing_DAG, task_id=download_video, run_id=manual__2024-05-21T22:06:52.866959+00:00, execution_date=20240521T220652, start_date=20240521T220703, end_date=20240521T220708
+[2024-05-21T22:07:08.489+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-21T22:07:08.496+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-21T22:07:08.496+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

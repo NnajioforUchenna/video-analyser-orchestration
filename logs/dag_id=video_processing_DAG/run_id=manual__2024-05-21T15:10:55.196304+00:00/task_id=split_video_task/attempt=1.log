@@ -1,0 +1,178 @@
+[2024-05-21T15:11:12.117+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-21T15:11:12.124+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: video_processing_DAG.split_video_task manual__2024-05-21T15:10:55.196304+00:00 [queued]>
+[2024-05-21T15:11:12.128+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: video_processing_DAG.split_video_task manual__2024-05-21T15:10:55.196304+00:00 [queued]>
+[2024-05-21T15:11:12.128+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-21T15:11:12.133+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): split_video_task> on 2024-05-21 15:10:55.196304+00:00
+[2024-05-21T15:11:12.136+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=147) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-21T15:11:12.137+0000] {standard_task_runner.py:63} INFO - Started process 151 to run task
+[2024-05-21T15:11:12.137+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'video_processing_DAG', 'split_video_task', 'manual__2024-05-21T15:10:55.196304+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/video_processing_dag.py', '--cfg-path', '/tmp/tmpl9z7y0cz']
+[2024-05-21T15:11:12.138+0000] {standard_task_runner.py:91} INFO - Job 54: Subtask split_video_task
+[2024-05-21T15:11:12.158+0000] {task_command.py:426} INFO - Running <TaskInstance: video_processing_DAG.split_video_task manual__2024-05-21T15:10:55.196304+00:00 [running]> on host 493ad129251c
+[2024-05-21T15:11:12.186+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='code2stories@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='video_processing_DAG' AIRFLOW_CTX_TASK_ID='split_video_task' AIRFLOW_CTX_EXECUTION_DATE='2024-05-21T15:10:55.196304+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-21T15:10:55.196304+00:00'
+[2024-05-21T15:11:12.187+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-21T15:11:12.187+0000] {video_processing_dag.py:66} INFO - Triggering Celery task to split video
+[2024-05-21T15:11:12.190+0000] {logging_mixin.py:188} INFO - 2024-03-26_11_20.mp4
+[2024-05-21T15:11:12.190+0000] {logging_mixin.py:188} INFO - Starting to split video: 2024-03-26_11_20.mp4
+[2024-05-21T15:11:12.190+0000] {logging_mixin.py:188} INFO - Created output folder: output_2024-03-26_11_20
+[2024-05-21T15:11:12.191+0000] {logging_mixin.py:188} INFO - Calculating chunk times...
+[2024-05-21T15:11:12.220+0000] {logging_mixin.py:188} INFO - Chunk times calculated: [(0, 132.13)]
+[2024-05-21T15:11:18.272+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-21T15:11:18.274+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/utils/functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/transport/virtual/base.py", line 951, in create_channel
+    return self._avail_channels.pop()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/connection.py", line 276, in connect
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/connection.py", line 277, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/connection.py", line 639, in _connect
+    raise err
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/connection.py", line 627, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/utils/functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/connection.py", line 934, in _connection_factory
+    self._connection = self._establish_connection()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/transport/virtual/base.py", line 975, in establish_connection
+    self._avail_channels.append(self.create_channel(self))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/transport/virtual/base.py", line 953, in create_channel
+    channel = self.Channel(connection)
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/transport/redis.py", line 744, in __init__
+    self.client.ping()
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/commands/core.py", line 1217, in ping
+    return self.execute_command("PING", **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/client.py", line 542, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/connection.py", line 1109, in get_connection
+    connection.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/redis/connection.py", line 282, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to redis-celery:6380. Connection refused.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/video_processing_dag.py", line 69, in split_video_task
+    result = split_video_into_chunks(filePath)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/local.py", line 182, in __call__
+    return self._get_current_object()(*a, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/app/trace.py", line 737, in __protected_call__
+    return orig(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/app/task.py", line 411, in __call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/video_audio_spliting.py", line 68, in split_video_into_chunks
+    result = job.apply_async()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/canvas.py", line 1614, in apply_async
+    results = list(self._apply_tasks(tasks, producer, app, p,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/canvas.py", line 1793, in _apply_tasks
+    sig.apply_async(producer=producer, add_to_parent=False,
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/canvas.py", line 400, in apply_async
+    return _apply(args, kwargs, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/app/task.py", line 594, in apply_async
+    return app.send_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/app/base.py", line 801, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/airflow/.local/lib/python3.12/site-packages/celery/app/amqp.py", line 518, in send_task_message
+    ret = producer.publish(
+          ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/messaging.py", line 186, in publish
+    return _publish(
+           ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/messaging.py", line 195, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/messaging.py", line 218, in _get_channel
+    channel = self._channel = channel()
+                              ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/utils/functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/messaging.py", line 234, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/connection.py", line 953, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/connection.py", line 458, in _ensure_connection
+    with ctx():
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/airflow/.local/lib/python3.12/site-packages/kombu/connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: Error 111 connecting to redis-celery:6380. Connection refused.
+[2024-05-21T15:11:18.302+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=video_processing_DAG, task_id=split_video_task, run_id=manual__2024-05-21T15:10:55.196304+00:00, execution_date=20240521T151055, start_date=20240521T151112, end_date=20240521T151118
+[2024-05-21T15:11:18.313+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 54 for task split_video_task (Error 111 connecting to redis-celery:6380. Connection refused.; 151)
+[2024-05-21T15:11:18.354+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-21T15:11:18.369+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-21T15:11:18.370+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

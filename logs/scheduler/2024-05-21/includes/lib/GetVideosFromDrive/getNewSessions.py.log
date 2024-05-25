@@ -1,0 +1,56 @@
+[2024-05-21T02:42:09.846+0000] {processor.py:161} INFO - Started process (PID=38) to work on /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:42:09.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py for tasks to queue
+[2024-05-21T02:42:09.848+0000] {logging_mixin.py:188} INFO - [2024-05-21T02:42:09.847+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:42:09.915+0000] {logging_mixin.py:188} INFO - [2024-05-21T02:42:09.914+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py", line 5, in <module>
+    from dags.includes.lib.FirebaseServices.check_video_status import checkVideoStatus
+ModuleNotFoundError: No module named 'dags'
+[2024-05-21T02:42:09.916+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:42:09.923+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py took 0.079 seconds
+[2024-05-21T02:42:39.937+0000] {processor.py:161} INFO - Started process (PID=99) to work on /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:42:39.937+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py for tasks to queue
+[2024-05-21T02:42:39.938+0000] {logging_mixin.py:188} INFO - [2024-05-21T02:42:39.938+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:42:39.960+0000] {logging_mixin.py:188} INFO - [2024-05-21T02:42:39.959+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py", line 5, in <module>
+    from dags.includes.lib.FirebaseServices.check_video_status import checkVideoStatus
+ModuleNotFoundError: No module named 'dags'
+[2024-05-21T02:42:39.960+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:42:39.967+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py took 0.033 seconds
+[2024-05-21T02:43:10.000+0000] {processor.py:161} INFO - Started process (PID=158) to work on /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:43:10.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py for tasks to queue
+[2024-05-21T02:43:10.002+0000] {logging_mixin.py:188} INFO - [2024-05-21T02:43:10.002+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:43:10.031+0000] {logging_mixin.py:188} INFO - [2024-05-21T02:43:10.030+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py", line 5, in <module>
+    from dags.includes.lib.FirebaseServices.check_video_status import checkVideoStatus
+ModuleNotFoundError: No module named 'dags'
+[2024-05-21T02:43:10.031+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:43:10.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py took 0.044 seconds
+[2024-05-21T02:43:40.478+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:43:40.479+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py for tasks to queue
+[2024-05-21T02:43:40.481+0000] {logging_mixin.py:188} INFO - [2024-05-21T02:43:40.480+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:43:40.512+0000] {logging_mixin.py:188} INFO - [2024-05-21T02:43:40.511+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py", line 5, in <module>
+    from dags.includes.lib.FirebaseServices.check_video_status import checkVideoStatus
+ModuleNotFoundError: No module named 'dags'
+[2024-05-21T02:43:40.512+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py
+[2024-05-21T02:43:40.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/includes/lib/GetVideosFromDrive/getNewSessions.py took 0.049 seconds
